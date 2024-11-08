@@ -1,0 +1,59 @@
+.CardEventSection {
+  width: 340px;
+  height: 310px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+
+.CardEventSection:hover {
+  cursor: pointer;
+}
+
+.CardEventSection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-details {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.hideText {
+  display: none;
+}
+
+.event-details:hover {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 75%;
+  cursor: pointer;
+
+  .hideText {
+    display: block;
+  }
+}
+
+.event-details h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.event-details p {
+  color: white;
+  font-size: 14px;
+}
