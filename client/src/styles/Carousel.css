@@ -46,6 +46,8 @@
 .card-image {
   width: 100%;
   object-fit: cover;
+  display: flex;
+  flex-shrink: 1;
 }
 
 .card-overlay {
@@ -132,22 +134,57 @@
   background-color: #e6b504;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 400px) {
   .carousel {
-    height: 400px;
-  }
-
-  .card-title {
-    font-size: 15px;
+    height: 300px;
   }
 
   .pagination-dot {
     width: 8px;
     height: 8px;
   }
+  .card-overlay {
+    width: 80%;
+    height: auto;
+    padding: 5px;
+  }
+
+  .card-title {
+    font-size: 0.3rem;
+  }
+
+  .card-date,
+  .card-time,
+  .card-location {
+    font-size: 1rem;
+  }
+  .imgSrc {
+    object-fit: cover;
+    width: 100%;
+  }
 }
 
-@media (min-width: 1025px) {
+@media (max-width: 1095px) {
+  .card-overlay {
+    width: 30%;
+    height: auto;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-date,
+  .card-time,
+  .card-location {
+    font-size: 0.7rem;
+  }
+  .pagination-dot {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (min-width: 1095px) {
   .carousel {
     height: 500px;
   }

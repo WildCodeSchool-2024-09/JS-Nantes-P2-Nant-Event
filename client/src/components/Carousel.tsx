@@ -39,7 +39,7 @@ function Carousel({ imgSrc }: CarouselProps) {
           >
             <img className="card-image" src={item.imgSrc} alt={item.title} />
             <div className="card-overlay">
-              <p className="card_date">{item.date}</p>
+              <p className="card-date">{item.date}</p>
               <p className="card-title">{item.title}</p>
               <p className="card-time">{item.place}</p>
             </div>
