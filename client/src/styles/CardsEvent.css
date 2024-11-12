@@ -68,3 +68,19 @@
     font-size: 14px;
   }
 }
+
+@media screen and (max-width: 700px) {
+  .card-event-section {
+    width: 80vw;
+    height: 250px;
+  }
+
+  .event-details {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+
+    /* bottom: 0px; */
+    width: 100%;
+  }
+}

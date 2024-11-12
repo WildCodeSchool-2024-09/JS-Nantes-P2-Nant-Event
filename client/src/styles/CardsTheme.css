@@ -30,3 +30,15 @@
 .title-card-event:hover {
   cursor: pointer;
 }
+
+@media screen and (max-width: 700px) {
+  .event-align {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .cards-theme {
+    height: auto;
+  }
+}

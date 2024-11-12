@@ -16,9 +16,7 @@ export default function CardsTheme({ name }: CardsThemeI) {
         <div className="event-align">
           <CardsEvent />
           <CardsEvent />
-          <div className="third-card">
-            <CardsEvent />
-          </div>
+          <CardsEvent />
         </div>
       </section>
     </>
