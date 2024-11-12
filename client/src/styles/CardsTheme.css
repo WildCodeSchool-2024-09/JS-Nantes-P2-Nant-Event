@@ -1,32 +1,32 @@
 .cards-theme {
-	width: 80vw;
-	height: 400px;
-	display: flex;
-	flex-direction: column;
-	gap: 15px;
+  width: 80vw;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .title-card-event {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 .event-align {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	font-family: "Montserrat", sans-serif;
-	gap: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+  gap: 15px;
 }
 
 .title-card-event p {
-	color: #e6b504;
-	font-weight: 600;
-	font-size: 22px;
+  color: #e6b504;
+  font-weight: 600;
+  font-size: 22px;
 }
 
 .title-card-event:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
