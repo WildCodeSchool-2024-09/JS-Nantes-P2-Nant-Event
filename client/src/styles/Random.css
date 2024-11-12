@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Racing+Sans+One&display=swap");
+
+.random {
+  height: 100vh;
+  background-color: #e6b504;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+h1 {
+  font-family: "Racing Sans One", sans-serif;
+  color: white;
+  font-size: 50px;
+}
+h2 {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+img {
+  width: 30vw;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  cursor: pointer;
+}
+button:hover {
+  border-color: #e6b504;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto #e6b504;
+}
+p {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: "Monserrat", sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+  .random {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+}
