@@ -18,6 +18,7 @@ export default function CardsTheme({ name }: CardsThemeI) {
           <CardsEvent />
           <CardsEvent />
         </div>
+        <p className="voir-plus-hided">voir plus</p>
       </section>
     </>
   );

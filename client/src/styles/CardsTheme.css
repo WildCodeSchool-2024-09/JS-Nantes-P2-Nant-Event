@@ -25,9 +25,23 @@
   color: #e6b504;
   font-weight: 600;
   font-size: 22px;
+  display: block;
 }
 
 .title-card-event:hover {
+  cursor: pointer;
+}
+
+.voir-plus-hided {
+  color: #e6b504;
+  font-weight: 600;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  display: none;
+  text-align: right;
+}
+
+.voir-plus-hided:hover {
   cursor: pointer;
 }
 
@@ -40,5 +54,17 @@
 
   .cards-theme {
     height: auto;
+  }
+
+  .title-theme {
+    font-size: 20px;
+  }
+
+  .voir-plus-hided {
+    display: block;
+  }
+
+  .title-card-event p {
+    display: none;
   }
 }

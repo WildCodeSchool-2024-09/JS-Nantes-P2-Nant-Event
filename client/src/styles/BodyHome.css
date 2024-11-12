@@ -13,7 +13,7 @@
   .section-body-home {
     display: flex;
     align-items: center;
-
+    background-position: 8% 98%;
     gap: 20px;
   }
 }
