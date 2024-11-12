@@ -1,0 +1,34 @@
+.drop-btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+}
+
+.drop-btn:hover {
+  color: #e5cb6b;
+  cursor: pointer;
+}
+
+.extItem1 {
+  background-color: rgba(0, 0, 0, 0.763);
+  width: 150px;
+  border: white 2px solid;
+  border-radius: 10px;
+}
+
+.listItem {
+  color: white;
+  padding: 15px;
+  padding-left: 20px;
+  width: 75%;
+}
+.listItem:hover {
+  color: #e5cb6b;
+  background-color: black;
+  cursor: pointer;
+}

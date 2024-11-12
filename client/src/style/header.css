@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+}
+
+nav {
+  background-color: black;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  font-size: 17px;
+  position: relative;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 400px;
+  padding-top: 20px;
+}
+
+.main-nav {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.main-nav li {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.desktop-menu {
+  display: flex;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #e5cb6b;
+}
+
+.coeur {
+  font-size: 30px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 63px;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.639);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 40px;
+  padding: 20px;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.menu-button {
+  display: none;
+}
+
+.btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  z-index: 10;
+  justify-content: flex-start;
+  margin-left: 15px;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+ul {
+  list-style: none;
+}
+
+@media (max-width: 800px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .logo {
+    width: 300px;
+  }
+  .btn {
+    display: flex;
+    justify-content: ;
+  }
+  .sidebar {
+    display: flex;
+  }
+  .main-nav {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+    display: flex;
+  }
+
+  .logo {
+    width: 250px;
+  }
+}
