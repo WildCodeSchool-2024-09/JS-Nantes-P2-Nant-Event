@@ -8,7 +8,6 @@ type CarouselProps = {
 
 function Carousel({ imgSrc }: CarouselProps) {
   const [current, setCurrent] = useState(0);
-  /*const [autoPlay, setAutoPlay] = useState(null);*/
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -50,7 +49,6 @@ function Carousel({ imgSrc }: CarouselProps) {
           className="carousel-arrow-left"
           onClick={slideLeft}
         >
-          {" "}
           &lsaquo;
         </button>
         <button
@@ -58,15 +56,14 @@ function Carousel({ imgSrc }: CarouselProps) {
           className="carousel-arrow-right"
           onClick={slideRight}
         >
-          {" "}
           &rsaquo;
         </button>
         <div className="carousel-pagination">
-          {imgSrc.map((_, index) => {
+          {imgSrc.map((src, index) => {
             return (
               <button
                 type="button"
-                key={_.imgSrc}
+                key={src.imgSrc}
                 className={
                   index === current
                     ? "pagination-dot pagination-dot-active"
