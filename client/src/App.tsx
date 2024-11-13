@@ -4,7 +4,7 @@ import { data } from "./components/Data";
 
 function App() {
   return (
-    <div className="App">
+    <div className="carousel-container">
       <Carousel imgSrc={data} />
     </div>
   );
