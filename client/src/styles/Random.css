@@ -9,21 +9,22 @@
   align-items: center;
   gap: 0.5rem;
 }
-h1 {
+.title {
   font-family: "Racing Sans One", sans-serif;
   color: white;
   font-size: 50px;
 }
-h2 {
+.event_title {
   font-family: "Montserrat", sans-serif;
   color: white;
 }
 
-img {
-  width: 30vw;
+.poster {
+  width: auto;
+  max-height: 35vh;
 }
 
-button {
+.cta {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -33,22 +34,21 @@ button {
   background-color: white;
   cursor: pointer;
 }
-button:hover {
+.cta:hover {
   border-color: #e6b504;
 }
-button:focus,
-button:focus-visible {
+.cta:focus,
+.cta:focus-visible {
   outline: 4px auto #e6b504;
 }
-p {
+.event_info {
   color: black;
   font-family: "Montserrat", sans-serif;
 }
 
-a {
+.event_url {
   color: white;
-  text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: "Monserrat", sans-serif;
 }
 
@@ -58,10 +58,10 @@ a {
     flex-direction: column;
     align-items: center;
   }
-  h1 {
+  .title {
     text-align: center;
   }
-  h2 {
+  .event_title {
     text-align: center;
   }
 }
