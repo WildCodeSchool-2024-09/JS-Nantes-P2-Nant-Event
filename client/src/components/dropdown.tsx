@@ -10,7 +10,7 @@ const DropDown = ({ options }: { options: string[] }) => {
   };
 
   return (
-    <div>
+    <div className="dropdown-container">
       <button type="button" onClick={toggleDropdown} className="drop-btn">
         THEMES
         {isExpanded && <CaretUp size={24} />}
