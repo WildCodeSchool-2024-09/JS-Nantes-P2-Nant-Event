@@ -1,0 +1,69 @@
+.cards-theme {
+  width: 80vw;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-card-event {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.event-align {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+  gap: 15px;
+}
+
+.title-card-event p {
+  color: #e6b504;
+  font-weight: 600;
+  font-size: 22px;
+  display: block;
+}
+
+.title-card-event:hover {
+  cursor: pointer;
+}
+
+.voir-plus-hided {
+  color: #e6b504;
+  font-weight: 600;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  display: none;
+  text-align: right;
+}
+
+.voir-plus-hided:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .event-align {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .cards-theme {
+    height: auto;
+  }
+
+  .title-theme {
+    font-size: 20px;
+  }
+
+  .voir-plus-hided {
+    display: block;
+  }
+
+  .title-card-event p {
+    display: none;
+  }
+}
