@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Racing+Sans+One&display=swap");
+
+.random {
+  height: 100vh;
+  background-color: #e6b504;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.title {
+  font-family: "Racing Sans One", sans-serif;
+  color: white;
+  font-size: 50px;
+}
+.event_title {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.poster {
+  width: auto;
+  max-height: 35vh;
+}
+
+.cta {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  cursor: pointer;
+}
+.cta:hover {
+  border-color: #e6b504;
+}
+.cta:focus,
+.cta:focus-visible {
+  outline: 4px auto #e6b504;
+}
+.event_info {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
+.event_url {
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Monserrat", sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+  .random {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title {
+    text-align: center;
+  }
+  .event_title {
+    text-align: center;
+  }
+}
