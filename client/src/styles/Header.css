@@ -1,10 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  position: relative;
-}
-
 .header {
   width: 100%;
 }
@@ -67,7 +60,7 @@ nav a:hover {
   color: #e5cb6b;
 }
 
-.coeur {
+.heart {
   font-size: 30px;
 }
 
@@ -135,7 +128,6 @@ ul {
   }
   .btn {
     display: flex;
-    justify-content: ;
   }
   .sidebar {
     display: flex;

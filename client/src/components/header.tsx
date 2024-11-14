@@ -1,6 +1,6 @@
 import "../style/header.css";
 import { useState } from "react";
-import DropDown from "./DropDown";
+import DropDown from "./Dropdown";
 
 const Header = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -27,7 +27,7 @@ const Header = () => {
         <a href="/">NAONIGHT</a>
       </li>
       <li>
-        <a className="coeur" href="/">
+        <a className="heart" href="/">
           ❤
         </a>
       </li>
