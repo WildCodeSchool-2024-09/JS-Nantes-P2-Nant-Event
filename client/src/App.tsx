@@ -8,8 +8,9 @@ function App() {
   return (
     <div className="App">
       <Carousel imgSrc={data} />
-      <MapCard />
+
       <NantesEventsMap />
+      <MapCard />
     </div>
   );
 }
