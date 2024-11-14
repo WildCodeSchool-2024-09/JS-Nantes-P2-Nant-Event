@@ -3,14 +3,19 @@ import { Outlet } from "react-router-dom";
 import BodyNight from "../components/BodyNight";
 import HeaderNight from "../components/HeaderNight";
 
+import "../styles/NaoNight.css";
+
 function NaoNight() {
   return (
     <>
-      <HeaderNight />
-      <BodyNight />
-      <main>
-        <Outlet />
-      </main>
+      <section className="body-naonight">
+        <HeaderNight />
+        <BodyNight />
+        {/* </Footer> */}
+        <main>
+          <Outlet />
+        </main>
+      </section>
     </>
   );
 }
