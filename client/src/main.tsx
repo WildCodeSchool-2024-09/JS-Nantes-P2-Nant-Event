@@ -5,6 +5,7 @@ import "./styles/Global.css";
 
 import App from "./App";
 import HomePage from "./pages/HomePage";
+
 import NaoNight from "./pages/NaoNight";
 
 const router = createBrowserRouter([
