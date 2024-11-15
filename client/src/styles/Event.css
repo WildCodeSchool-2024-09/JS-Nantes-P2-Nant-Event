@@ -29,14 +29,14 @@ img {
 .event-info {
   color: black;
   font-family: "Montserrat", sans-serif;
-  width: ;
+  width: 40rem;
   text-align: center;
   padding: 10px 10px;
 }
 .separation {
-  width: 5rem;
-  height: 2px;
-  margin: 0;
+  width: 15rem;
+  height: 4px;
+  text-decoration: none;
   background-color: #e6b504;
 }
 .cta {
