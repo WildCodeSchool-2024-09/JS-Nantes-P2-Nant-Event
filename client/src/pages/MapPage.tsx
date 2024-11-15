@@ -1,11 +1,11 @@
-import MapCard from "../components/MapCard";
+import ContainerMapCard from "../components/ContainerMapCard";
 import NantesEventsMap from "../components/NantesEventsMap";
 
 function MapPage() {
   return (
     <div className="App">
       <NantesEventsMap />
-      <MapCard />
+      <ContainerMapCard />
     </div>
   );
 }
