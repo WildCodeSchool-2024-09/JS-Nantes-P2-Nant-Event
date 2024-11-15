@@ -2,7 +2,7 @@ import "../style/footer.css";
 
 function Footer() {
   return (
-    <div className="footer-container">
+    <footer>
       <div className="social-icons">
         <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
           <i className="fa-brands fa-facebook" />
@@ -43,7 +43,7 @@ function Footer() {
           <span className="designer">Compo’Nantes</span>
         </p>
       </div>
-    </div>
+    </footer>
   );
 }
 
