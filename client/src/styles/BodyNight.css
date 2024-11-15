@@ -1,0 +1,22 @@
+.body-night {
+  margin-top: 1px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 90px;
+  padding: 25px;
+  background-image: url("public/logo_apostrophe_rose.png");
+  background-position: 8% 90%;
+  background-size: 250px;
+  background-repeat: no-repeat;
+  border: white;
+  border-width: 2rem;
+}
+
+.title-body-night {
+  font-family: "Racing Sans One", sans-serif;
+  color: #fffb17;
+  font-size: 75px;
+  font-weight: 500;
+}
