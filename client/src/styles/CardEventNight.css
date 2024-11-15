@@ -1,0 +1,77 @@
+.cards-event-night {
+  display: flex;
+  gap: 35px;
+  color: white;
+}
+
+.figure-image {
+  width: 500px;
+  height: 280px;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  overflow: hidden;
+}
+
+.figure-image:hover + span {
+  bottom: -36px;
+  opacity: 1;
+}
+
+.img-card-night {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* /* -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out; */
+  transition: .3s ease-in-out;
+}
+
+.img-card-night:hover {
+  /* -webkit-transform: scale(1.2); */
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.info-card-night {
+  width: 300px;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", serif;
+}
+
+.title-card-night {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.italic-card-night {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.price-card-night {
+  font-style: italic;
+}
+
+.bold-card-night {
+  font-weight: 700;
+  color: #fffb17;
+}
+
+.button-rose {
+  padding: 10px;
+  background-color: #ff17a6;
+  border-radius: 20px;
+  height: 35px;
+  color: white;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: larger;
+  font-size: 16px;
+}
