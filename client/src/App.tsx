@@ -1,8 +1,22 @@
 import "./App.css";
-import Event from "./components/Event";
+
+import BodyHome from "./components/BodyHome";
+import Carousel from "./components/Carousel";
+import { data } from "./components/Data";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 function App() {
-  return <Event />;
+  return (
+    <>
+      <Header />
+      <div className="carousel-container">
+        <Carousel imgSrc={data} />
+      </div>
+      <BodyHome />
+      <Footer />
+    </>
+  );
 }
 
 export default App;

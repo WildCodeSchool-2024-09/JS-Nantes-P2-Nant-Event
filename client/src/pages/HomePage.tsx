@@ -1,4 +1,4 @@
-import "../styles/homePage.css";
+import "../styles/HomePage.css";
 import { Link, Outlet } from "react-router-dom";
 
 function HomePage() {
