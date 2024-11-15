@@ -31,7 +31,7 @@ function Event() {
   return (
     <main className="page">
       <h1 className="event-title">{event?.nom}</h1>
-      <img src={event?.media_url} alt="" />
+      <img className="event-image" src={event?.media_url} alt="" />
       <h3 className="category">{event?.themes_libelles} </h3>
       <p className="event-info">{event?.description_evt} </p>
       <hr className="separation" />
