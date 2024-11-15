@@ -4,9 +4,8 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./styles/Global.css";
 
 import App from "./App";
-
+import HomePage from "./pages/HomePage";
 import NaoNight from "./pages/NaoNight";
-import HomePage from "./pages/homePage";
 
 const router = createBrowserRouter([
   {
