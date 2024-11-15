@@ -1,4 +1,4 @@
-import "../style/Dropdown.css";
+import "../styles/Dropdown.css";
 import { CaretDown, CaretUp } from "@phosphor-icons/react";
 import { useState } from "react";
 

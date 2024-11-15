@@ -1,4 +1,4 @@
-import "../style/header.css";
+import "../styles/Header.css";
 import { useState } from "react";
 import DropDown from "./Dropdown";
 
