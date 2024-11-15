@@ -29,25 +29,30 @@ function Event() {
   }, []);
 
   return (
-    <div className="page">
-      <h1>{event?.nom}</h1>
+    <main className="page">
+      <h1 className="event-title">{event?.nom}</h1>
       <img src={event?.media_url} alt="" />
-      <div className="category">{event?.themes_libelles} </div>
-      <p>{event?.description_evt} </p>
+      <h3 className="category">{event?.themes_libelles} </h3>
+      <p className="event-info">{event?.description_evt} </p>
       <div className="separation" />
-      <div className="adresse">
-        <p>{event?.lieu}</p>
-        <p>{event?.adresse}</p>
-        <p>{event?.code_postal}</p>
-      </div>
+      <address className="adresse">
+        <p className="event-info">{event?.lieu}</p>
+        <p className="event-info">{event?.adresse}</p>
+        <p className="event-info">{event?.code_postal}</p>
+      </address>
       <div className="separation" />
-      <div className="cta">
-        <p>Informations supplémentaires : </p>
-        <a href={event?.url_site} target="_blank" rel="noreferrer">
+      <section className="cta">
+        <p className="event-info">Informations supplémentaires : </p>
+        <a
+          className="event-link"
+          href={event?.url_site}
+          target="_blank"
+          rel="noreferrer"
+        >
           Cliquez ici
         </a>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
 
