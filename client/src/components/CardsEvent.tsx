@@ -1,5 +1,9 @@
-import { useEffect, useState } from "react";
 import "../styles/CardsEvent.css";
+
+interface CardsEventProps {
+  index: number;
+  data: Event[];
+}
 
 interface Event {
   nom: string;
@@ -7,32 +11,24 @@ interface Event {
   date: string;
   description_evt: string;
   lieu: string;
-  url_site: string;
 }
 
-export default function CardsEvent() {
-  const [event, setEvent] = useState<Event | null>(null);
-  useEffect(() => {
-    fetch(
-      "https://data.opendatasoft.com/api/explore/v2.1/catalog/datasets/244400404_agenda-evenements-nantes-metropole_v2@nantesmetropole/records?limit=19",
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        setEvent(data.results[1]);
-      });
-  }, []);
-
+export default function CardsEvent({ index, data }: CardsEventProps) {
+  const event = data[index];
   return (
     <>
       <section className="card-event-section">
-        <img src={event?.media_url} alt="booba" />
-        <div className="event-details">
+        <img src={event?.media_url} alt="Affiche Evenement" />
+        <article className="event-details">
           <h3>{event?.nom}</h3>
           <p>
             {event?.lieu} {event?.date}
           </p>
-          <p className="hide-text">{event?.description_evt}</p>
-        </div>
+          <details>
+            <summary className="hide-text">Plus d'informations</summary>
+            {event?.description_evt}
+          </details>
+        </article>
       </section>
     </>
   );
