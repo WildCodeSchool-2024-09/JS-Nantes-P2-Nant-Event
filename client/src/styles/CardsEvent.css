@@ -38,6 +38,14 @@ details :first-child {
   text-decoration: underline;
   font-weight: bold;
 }
+details[open] > summary {
+  visibility: hidden;
+}
+
+details[open] > summary::before {
+  visibility: visible;
+  content: "Moins d'informations";
+}
 
 .event-details:hover {
   padding: 15px;

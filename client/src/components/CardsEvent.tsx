@@ -22,7 +22,7 @@ export default function CardsEvent({ index, data }: CardsEventProps) {
         <article className="event-details">
           <h3>{event?.nom}</h3>
           <p>
-            {event?.lieu} {event?.date}
+            {event?.lieu} {event.date}
           </p>
           <details>
             <summary className="hide-text">Plus d'informations</summary>
