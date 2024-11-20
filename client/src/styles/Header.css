@@ -135,6 +135,12 @@ ul {
   .main-nav {
     justify-content: flex-start;
   }
+  .dropdown {
+    margin-left: 20px;
+  }
+  .agenda {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 400px) {

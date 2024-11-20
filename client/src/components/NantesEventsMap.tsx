@@ -1,4 +1,4 @@
-import "../Styles/NantesEventsMap.css";
+import "../styles/NantesEventsMap.css";
 
 const NantesEventsMap = () => {
   return (

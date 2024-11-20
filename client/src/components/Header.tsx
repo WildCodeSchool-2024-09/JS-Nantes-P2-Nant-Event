@@ -12,10 +12,19 @@ const Header = () => {
   const MenuItems = () => (
     <>
       <li>
-        <a href="/">AGENDA</a>
+        <a className="agenda" href="/">
+          AGENDA
+        </a>
       </li>
-      <li>
-        <DropDown options={["Item 1", "Item 2", "Item 3"]} />
+      <li className="dropdown">
+        <DropDown
+          options={[
+            "Evènements musicaux",
+            "Evènements sportifs",
+            "Evènements artistiques",
+            "Au théatre",
+          ]}
+        />
       </li>
       <li>
         <a href="/">ALEATOIRE</a>
@@ -55,7 +64,7 @@ const Header = () => {
                   onClick={toggle}
                   className="btn"
                 >
-                  <svg
+                  {/* <svg
                     xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     width="24"
@@ -66,7 +75,7 @@ const Header = () => {
                     <title>Menu</title>
                     <desc>Icône de menu hamburger à trois lignes</desc>
                     <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                  </svg>
+                  </svg> */}
                 </button>
               </li>
               <MenuItems />
