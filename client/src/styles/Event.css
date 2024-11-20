@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Racing+Sans+One&display=swap");
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 100vw;
+  gap: 10px;
+}
+
+.event-image {
+  width: 30vw;
+}
+.event-title {
+  font-family: "Racing Sans One", sans-serif;
+  color: black;
+  text-align: center;
+}
+.category {
+  background-color: #e6b504;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.event-info::first-letter {
+  text-transform: uppercase;
+}
+.event-info {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  width: 40rem;
+  text-align: center;
+  padding: 10px 10px;
+}
+.separation {
+  width: 15rem;
+  height: 4px;
+  text-decoration: none;
+  background-color: #e6b504;
+}
+.cta {
+  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40vw;
+  border-radius: 10px;
+  padding: 10px;
+}
+.event-link {
+  font-family: "Montserrat", sans-serif;
+  color: #e6b504;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .random {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .event-info {
+    width: fit-content;
+  }
+}

@@ -4,7 +4,7 @@ const NantesEventsMap = () => {
   return (
     <div className="map-container">
       <h1 className="map-title">
-        <button className="btn" type="button">
+        <button className="btn-map" type="button">
           Aujourd'hui
         </button>
         Semaine du 4 au 10 Novembre{" "}
