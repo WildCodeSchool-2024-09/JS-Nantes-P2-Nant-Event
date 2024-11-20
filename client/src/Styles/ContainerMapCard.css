@@ -2,9 +2,20 @@
   margin: 140px auto;
   display: flex;
   flex-wrap: wrap;
-  width: 1300px;
+  width: 100%;
   gap: 40px;
   justify-content: space-evenly;
   box-shadow: -2px 3px 5px #e6b50440;
   padding: 50px;
+}
+
+@media (max-width: 800px) {
+  .card-container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 400px) {
+  .card-container {
+    flex-direction: column;
+  }
 }
