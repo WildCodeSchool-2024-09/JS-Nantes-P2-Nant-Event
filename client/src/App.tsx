@@ -14,6 +14,7 @@ function App() {
         <Carousel imgSrc={data} />
       </div>
       <BodyHome />
+
       <Footer />
     </>
   );
