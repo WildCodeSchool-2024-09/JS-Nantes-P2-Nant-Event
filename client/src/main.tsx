@@ -4,8 +4,8 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./styles/Global.css";
 
 import App from "./App";
+import Aleatoire from "./pages/Aleatoire";
 import HomePage from "./pages/HomePage";
-
 import NaoNight from "./pages/NaoNight";
 
 const router = createBrowserRouter([
@@ -16,6 +16,12 @@ const router = createBrowserRouter([
   {
     path: "/Home",
     element: <App />,
+    children: [
+      {
+        path: "",
+        element: <Aleatoire />,
+      },
+    ],
   },
   {
     path: "/Naonight",
