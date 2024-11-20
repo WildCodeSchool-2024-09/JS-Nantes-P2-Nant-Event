@@ -1,5 +1,5 @@
 import MapCard from "./MapCard";
-import "../Styles/ContainerMapCard.css";
+import "../styles/ContainerMapCard.css";
 
 function ContainerMapCard() {
   return (
