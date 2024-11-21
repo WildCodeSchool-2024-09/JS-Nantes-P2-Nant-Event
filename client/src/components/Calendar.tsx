@@ -48,7 +48,11 @@ function MyCalendar() {
               <div key={el.id} className="agenda-container">
                 <div className="event-img">
                   {el.media_url ? (
-                    <img src={el.media_url} alt="Affiche de l'évènement" />
+                    <img
+                      src={el.media_url}
+                      alt="Affiche de l'évènement"
+                      className="img-event-date"
+                    />
                   ) : (
                     <img src="../../public/koala.jpg" alt="Koala" />
                   )}
@@ -56,7 +60,7 @@ function MyCalendar() {
                 <div className="event-text">
                   <h2 className="agenda-event-title">{el.nom}</h2>
                   <details>
-                    <summary className="hide-text">Plus d'informations</summary>
+                    <summary>Plus d'informations</summary>
                     {el.description_evt}
                   </details>
                   <p>{el.lieu}</p>
