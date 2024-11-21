@@ -24,7 +24,7 @@ const Header = () => {
             "Événements musicaux",
             "Événements sportifs",
             "Événements artistiques",
-            "Au théatre",
+            "Spectacles",
           ]}
         />
       </li>
