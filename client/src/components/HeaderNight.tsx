@@ -19,7 +19,7 @@ function HeaderNight() {
             THEMES
           </Link>
 
-          <Link to={""} className="link-style">
+          <Link to="/Random" className="link-style">
             ALEATOIRE
           </Link>
 

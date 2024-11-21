@@ -1,5 +1,6 @@
 import "../styles/Header.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import DropDown from "./Dropdown";
 
 const Header = () => {
@@ -17,14 +18,15 @@ const Header = () => {
       <li>
         <DropDown options={["Item 1", "Item 2", "Item 3"]} />
       </li>
+
       <li>
-        <a href="/">ALEATOIRE</a>
+        <Link to="/Random"> ALEATOIRE </Link>
       </li>
       <li>
         <a href="/">MAP</a>
       </li>
       <li>
-        <a href="/">NAONIGHT</a>
+        <Link to="/NaoNight"> NAONIGHT </Link>
       </li>
       <li>
         <a className="heart" href="/">
