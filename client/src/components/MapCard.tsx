@@ -15,6 +15,7 @@ interface MapCardProps {
 
 function MapCard({ data }: MapCardProps) {
   const event = data;
+
   return (
     <article className="event-card">
       <time className="date" dateTime="2024-11-06">
