@@ -18,13 +18,11 @@ const DropDownNight = ({ options }: { options: string[] }) => {
       </button>
       {isExpanded && (
         <div className="extItem1">
-          <ul>
-            {options.map((option) => (
-              <li className="listItem" key={option}>
-                {option}
-              </li>
-            ))}
-          </ul>
+          {options.map((option) => (
+            <ul className="listItem" key={option}>
+              {option}
+            </ul>
+          ))}
         </div>
       )}
     </div>
