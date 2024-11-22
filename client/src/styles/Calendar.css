@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+.agenda-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("public/logo_apostrophe.png");
+  background-position: 8% 90%;
+  background-size: 250px;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+}
+
+.calendarcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.react-calendar {
+  width: 85%;
+  max-width: 600px;
+  height: auto;
+  padding: 15px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.react-calendar__tile {
+  height: 70px;
+  font-size: 1.2rem;
+}
+
+.react-calendar__tile:hover {
+  background-color: rgba(216, 100, 172, 0.262) !important;
+  color: black;
+  border-radius: 10px;
+}
+
+.react-calendar__navigation button {
+  font-size: 1.3rem;
+  padding: 8px;
+}
+
+.react-calendar__navigation button:hover {
+  background-color: #e6b50446 !important;
+}
+
+.react-calendar__month-view__weekdays {
+  font-size: 1.1rem;
+}
+
+.react-calendar__month-view__days__day {
+  font-size: 1rem;
+}
+
+.react-calendar__tile--active {
+  background-color: rgb(216, 100, 172) !important;
+  color: black;
+  border-radius: 8px;
+}
+.react-calendar__tile--active:enabled:hover {
+  background-color: #e6b504;
+  border-radius: 8px;
+}
+
+.react-calendar__tile--now {
+  background-color: #e6b504;
+  color: black;
+  border-radius: 8px;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: inherit;
+}
+
+.title-agenda {
+  font-family: "Rubik Mono One", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+
+.divider-agenda {
+  width: 90%;
+  border: 2px solid #000;
+  margin: 10px auto;
+}
+
+.event-calendar {
+  border-radius: 8px;
+  padding: 40px 100px 200px;
+  position: relative;
+}
+
+.event-img {
+  width: 500px;
+  height: 280px;
+  margin: 0;
+  padding: 0;
+}
+
+.img-event-date {
+  width: 100%;
+  height: 93%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.event-text {
+  max-height: 260px;
+  overflow: scroll;
+  padding: 10px;
+  background: #e6b504df;
+  color: white;
+  bottom: 0px;
+  width: 100%;
+  object-fit: cover;
+  font-family: "Montserrat", sans-serif;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: justify;
+  line-height: 2;
+}
+
+.agenda-container {
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+details :first-child {
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+details[open] > summary {
+  visibility: hidden;
+}
+details[open] > summary::before {
+  visibility: visible;
+  content: "Moins d'informations";
+  cursor: pointer;
+}
+
+summary {
+  overflow: scroll;
+}
+
+.agenda-event-title {
+  color: black;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 500px) {
+  .title-agenda {
+    font-size: 3rem;
+  }
+
+  .agenda-page {
+    background-image: url("public/logo_apostrophe.png");
+    background-position: 15% 83%;
+    background-size: 100px;
+    background-repeat: no-repeat;
+  }
+
+  .react-calendar {
+    width: 70%;
+    padding: 10px;
+  }
+
+  .agenda-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .react-calendar__tile {
+    height: 50px;
+    font-size: 0.9rem;
+  }
+
+  .event-img {
+    width: 50%;
+    height: auto;
+  }
+
+  .event-text {
+    font-size: 0.7rem;
+    text-align: justify;
+    max-height: 180px;
+    overflow: scroll;
+    line-height: 1.6;
+  }
+
+  .agenda-event-title {
+    font-size: 0.8rem;
+  }
+
+  .img-event-date {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  .agenda-container {
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .agenda-event-title {
+    font-size: 1.2rem;
+  }
+}

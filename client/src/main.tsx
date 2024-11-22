@@ -4,6 +4,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./styles/Global.css";
 
 import App from "./App";
+import MyCalendar from "./components/Calendar";
 import HomePage from "./pages/HomePage";
 import MapPage from "./pages/MapPage";
 import NaoNight from "./pages/NaoNight";
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/Naonight",
     element: <NaoNight />,
+  },
+  {
+    path: "/Calendar",
+    element: <MyCalendar />,
   },
 ]);
 
