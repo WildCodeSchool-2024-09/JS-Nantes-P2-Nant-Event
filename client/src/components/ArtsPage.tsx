@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-import Footer from "./Footer";
-import Header from "./Header";
 import CardMusic from "./CardMusic";
 
 interface EventData {
@@ -28,7 +26,6 @@ function ArtsPage() {
 
   return (
     <>
-      <Header />
       <section className="theme-body">
         <h1 className="theme-title"> Evènement Artistiques </h1>
 
@@ -36,7 +33,6 @@ function ArtsPage() {
           return <CardMusic key={el.id_manif} data={el} />;
         })}
       </section>
-      <Footer />
     </>
   );
 }

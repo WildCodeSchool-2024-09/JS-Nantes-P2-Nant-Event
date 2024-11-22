@@ -47,14 +47,10 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* /* -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: .3s ease-in-out; */
   transition: .3s ease-in-out;
 }
 
 .theme-affiche:hover {
-  /* -webkit-transform: scale(1.2); */
   transform: scale(1.2);
   cursor: pointer;
 }
@@ -121,70 +117,3 @@ details[open] > summary::before {
   content: "Moins d'informations";
   cursor: pointer;
 }
-
-/* .theme-title {
-  font-family: "Racing Sans One", sans-serif;
-  color: black;
-  text-align: center;
-  font-weight: 100;
-  line-height: 7rem;
-}
-
-.theme-head {
-  font-family: "Montserrat", sans-serif;
-  color: #e6b504;
-  width: 30vw;
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.theme-card {
-  display: flex;
-  justify-content: center;
-  width: 50vh;
-}
-
-
-.theme-affiche {
-  width: 30vw;
-  height: 40vh;
-  object-fit: cover;
-} */
-
-/* 
-details[open] > summary {
-  visibility: hidden;
-}
-details[open] > summary::before {
-  visibility: visible;
-  content: "Moins d'informations";
-  cursor: pointer;
-  width: 40vw;
-}
-
-summary:first-child {
-  text-decoration: solid;
-  font-weight: bold;
-}
-
-/* 
-.agenda-container {
-  width: 70vw;
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-}
-
-details :first-child {
-  font-weight: bold;
-  cursor: pointer;
-  margin-bottom: 8px;
-}
-
-summary {
-  overflow: scroll;
-} */
