@@ -1,6 +1,7 @@
 import "../styles/Dropdown.css";
 import { CaretDown, CaretUp } from "@phosphor-icons/react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const DropDown = ({ options }: { options: string[] }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -19,11 +20,10 @@ const DropDown = ({ options }: { options: string[] }) => {
       {isExpanded && (
         <div className="extItem1">
           <ul>
-            {options.map((option) => (
-              <li className="listItem" key={option}>
-                {option}
-              </li>
-            ))}
+            <Link to="/Music"> Evènements Musicaux</Link>
+            <Link to="/Sport"> Evènements Sportifs</Link>
+            <Link to="/Art"> Evènements Artistiques</Link>
+            <Link to="/Show">Spectacles</Link>
           </ul>
         </div>
       )}

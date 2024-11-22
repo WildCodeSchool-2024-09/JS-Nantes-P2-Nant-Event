@@ -9,6 +9,10 @@ import Home from "./pages/Home";
 import HomePage from "./pages/HomePage";
 import MapPage from "./pages/MapPage";
 import NaoNight from "./pages/NaoNight";
+import Music from "./pages/Music";
+import Art from "./pages/Art";
+import Sport from "./pages/Sport";
+import Show from "./pages/Show";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +38,22 @@ const router = createBrowserRouter([
       {
         path: "MapPage",
         element: <MapPage />,
+      },
+      {
+        path: "Sport",
+        element: <Sport />,
+      },
+      {
+        path: "Music",
+        element: <Music />,
+      },
+      {
+        path: "Art",
+        element: <Art />,
+      },
+      {
+        path: "Show",
+        element: <Show />,
       },
     ],
   },
