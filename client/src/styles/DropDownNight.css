@@ -20,7 +20,7 @@
   display: inline-block;
 }
 
-.extItem1 {
+.ext-item1 {
   position: absolute;
   top: 100%;
   left: 0;
@@ -32,14 +32,14 @@
   margin-top: 10px;
 }
 
-.listItem {
+.list-item {
   color: white;
   padding: 15px;
   padding-left: 20px;
   width: 75%;
 }
 
-.listItem:hover {
+.list-item:hover {
   color: #ff17a6;
   background-color: black;
   cursor: pointer;

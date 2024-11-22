@@ -17,9 +17,9 @@ const DropDownNight = ({ options }: { options: string[] }) => {
         {!isExpanded && <CaretDown size={24} />}
       </button>
       {isExpanded && (
-        <div className="extItem1">
+        <div className="ext-item1">
           {options.map((option) => (
-            <ul className="listItem" key={option}>
+            <ul className="list-item" key={option}>
               {option}
             </ul>
           ))}
