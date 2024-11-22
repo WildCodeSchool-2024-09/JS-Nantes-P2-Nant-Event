@@ -51,32 +51,38 @@ function Random() {
   const currentEvent = events[randomIndex];
 
   return (
-    <div className="random">
-      <h1 className="title">Pas d'idée de sortie ? </h1>
-      {currentEvent.media_url ? (
-        <img
-          src={currentEvent.media_url}
-          alt="Affiche évènement"
-          className="poster"
-        />
-      ) : (
-        <img src="/koala.jpg" alt="no response" className="poster" />
-      )}
-      <h2 className="event_title">{currentEvent.nom}</h2>
-      <p className="event_info">{currentEvent.emetteur}</p>
-      <p className="event_info">{currentEvent.date}</p>
-      <button type="button" onClick={handleRefresh} className="cta">
-        Relancer
-      </button>
-      <a
-        href={currentEvent.lien_agenda}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="event_url"
-      >
-        Plus d'infos
-      </a>
-    </div>
+    <>
+      <div className="random">
+        <h1 className="title">Pas d'idée de sortie ? </h1>
+        {currentEvent.media_url ? (
+          <img
+            src={currentEvent.media_url}
+            alt="Affiche évènement"
+            className="poster"
+          />
+        ) : (
+          <img
+            src="/koala.jpg"
+            alt="no images available for this event"
+            className="poster"
+          />
+        )}
+        <h2 className="event_title">{currentEvent.nom}</h2>
+        <p className="event_info">{currentEvent.emetteur}</p>
+        <p className="event_info">{currentEvent.date}</p>
+        <button type="button" onClick={handleRefresh} className="cta">
+          Relancer
+        </button>
+        <a
+          href={currentEvent.lien_agenda}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="event_url"
+        >
+          Plus d'infos
+        </a>
+      </div>
+    </>
   );
 }
 

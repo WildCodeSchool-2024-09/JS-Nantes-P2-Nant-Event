@@ -55,7 +55,9 @@ function MyCalendar() {
                 <div className="event-text">
                   <h2 className="agenda-event-title">{el.nom}</h2>
                   <details>
-                    <summary>Plus d'informations</summary>
+                    <summary className="summary-agenda">
+                      Plus d'informations
+                    </summary>
                     {el.description_evt}
                   </details>
                   <p>{el.lieu}</p>

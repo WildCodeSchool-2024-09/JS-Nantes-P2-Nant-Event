@@ -12,23 +12,20 @@ const HeaderNight = () => {
 
   const MenuItems = () => (
     <>
-      <Link className="link-style" to={""}>
+      <Link className="link-style" to="/Agenda">
         AGENDA
       </Link>
       <Link className="link-style" to={""}>
         <DropDownNight options={["Item 1", "Item 2", "Item 3"]} />
       </Link>
-      <Link className="link-style" to={""}>
+      <Link className="link-style" to="/Aleatoire">
         ALEATOIRE
       </Link>
-      <Link className="link-style" to={""}>
+      <Link className="link-style" to="/MapPage">
         MAP
       </Link>
       <Link className="link-style" to={""}>
         NAONIGHT
-      </Link>
-      <Link className="link-style" to={""}>
-        AGENDA
       </Link>
       <Link className="link-style" to={""}>
         ❤
