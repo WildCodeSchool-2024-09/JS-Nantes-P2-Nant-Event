@@ -6,7 +6,7 @@ function HomePage() {
     <>
       <div className="accueil-logo">
         <button type="button" className="button-logo">
-          <Link to={"Home"}>
+          <Link to="/Home">
             <img
               className="logo-ne"
               src="public\logo_NE.png"

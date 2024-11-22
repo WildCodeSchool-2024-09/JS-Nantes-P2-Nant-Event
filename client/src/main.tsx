@@ -5,6 +5,7 @@ import "./styles/Global.css";
 import App from "./App";
 import Agenda from "./pages/Agenda";
 import Aleatoire from "./pages/Aleatoire";
+import Home from "./pages/Home";
 import HomePage from "./pages/HomePage";
 import MapPage from "./pages/MapPage";
 import NaoNight from "./pages/NaoNight";
@@ -15,24 +16,26 @@ const router = createBrowserRouter([
     element: <HomePage />,
   },
   {
-    path: "/Home",
-    element: <App />,
-  },
-  {
-    path: "/Aleatoire",
-    element: <Aleatoire />,
-  },
-  {
     path: "/",
     element: <App />,
-  },
-  {
-    path: "/MapPage",
-    element: <MapPage />,
-  },
-  {
-    path: "/Agenda",
-    element: <Agenda />,
+    children: [
+      {
+        path: "/Home",
+        element: <Home />,
+      },
+      {
+        path: "Agenda",
+        element: <Agenda />,
+      },
+      {
+        path: "Aleatoire",
+        element: <Aleatoire />,
+      },
+      {
+        path: "MapPage",
+        element: <MapPage />,
+      },
+    ],
   },
 
   {

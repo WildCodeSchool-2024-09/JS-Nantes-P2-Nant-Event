@@ -61,7 +61,11 @@ function Random() {
             className="poster"
           />
         ) : (
-          <img src="/koala.jpg" alt="no response" className="poster" />
+          <img
+            src="/koala.jpg"
+            alt="no images available for this event"
+            className="poster"
+          />
         )}
         <h2 className="event_title">{currentEvent.nom}</h2>
         <p className="event_info">{currentEvent.emetteur}</p>
