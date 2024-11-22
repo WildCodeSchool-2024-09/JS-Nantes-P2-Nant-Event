@@ -11,7 +11,7 @@ function HeaderNight() {
           alt="logo NaoNight"
         />
         <ul className="list-header-naonight">
-          <Link className="link-style" to={""}>
+          <Link className="link-style" to="/Agenda">
             AGENDA
           </Link>
 
@@ -19,7 +19,7 @@ function HeaderNight() {
             THEMES
           </Link>
 
-          <Link to="/Random" className="link-style">
+          <Link to="/Aleatoire" className="link-style">
             ALEATOIRE
           </Link>
 

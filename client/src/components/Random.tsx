@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import "../styles/Random.css";
-import Footer from "./Footer";
-import Header from "./Header";
 
 interface Event {
   id_manif: number;
@@ -54,7 +52,6 @@ function Random() {
 
   return (
     <>
-      <Header />
       <div className="random">
         <h1 className="title">Pas d'idée de sortie ? </h1>
         {currentEvent.media_url ? (
@@ -81,7 +78,6 @@ function Random() {
           Plus d'infos
         </a>
       </div>
-      <Footer />
     </>
   );
 }

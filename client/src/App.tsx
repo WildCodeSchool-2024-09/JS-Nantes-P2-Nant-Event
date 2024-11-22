@@ -1,5 +1,4 @@
 import "./App.css";
-
 import { Outlet } from "react-router-dom";
 import BodyHome from "./components/BodyHome";
 import Carousel from "./components/Carousel";

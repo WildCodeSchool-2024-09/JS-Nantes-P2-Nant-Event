@@ -13,7 +13,7 @@ const Header = () => {
   const MenuItems = () => (
     <>
       <li>
-        <Link className="agenda" to={""}>
+        <Link className="agenda" to="/Agenda">
           AGENDA
         </Link>
       </li>
@@ -28,7 +28,7 @@ const Header = () => {
         />
       </li>
       <li>
-        <Link to="/Random"> ALEATOIRE </Link>
+        <Link to="/Aleatoire"> ALEATOIRE </Link>
       </li>
       <li>
         <Link to="/MapPage">MAP</Link>

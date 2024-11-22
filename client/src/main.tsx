@@ -2,9 +2,9 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./styles/Global.css";
-
 import App from "./App";
-import Random from "./components/Random";
+import Agenda from "./pages/Agenda";
+import Aleatoire from "./pages/Aleatoire";
 import HomePage from "./pages/HomePage";
 import MapPage from "./pages/MapPage";
 import NaoNight from "./pages/NaoNight";
@@ -19,10 +19,9 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/Random",
-    element: <Random />,
+    path: "/Aleatoire",
+    element: <Aleatoire />,
   },
-
   {
     path: "/",
     element: <App />,
@@ -30,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: "/MapPage",
     element: <MapPage />,
+  },
+  {
+    path: "/Agenda",
+    element: <Agenda />,
   },
 
   {
