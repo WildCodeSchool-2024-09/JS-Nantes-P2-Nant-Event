@@ -1,6 +1,5 @@
 import "../styles/Header.css";
 import { useState } from "react";
-
 import { Link } from "react-router-dom";
 import DropDown from "./Dropdown";
 
@@ -14,7 +13,7 @@ const Header = () => {
   const MenuItems = () => (
     <>
       <li>
-        <Link className="agenda" to={""}>
+        <Link className="agenda" to="/Agenda">
           AGENDA
         </Link>
       </li>
@@ -29,13 +28,13 @@ const Header = () => {
         />
       </li>
       <li>
-        <Link to={""}>ALEATOIRE</Link>
+        <Link to="/Aleatoire"> ALEATOIRE </Link>
       </li>
       <li>
-        <Link to={""}>MAP</Link>
+        <Link to="/MapPage">MAP</Link>
       </li>
       <li>
-        <Link to={""}>NAONIGHT</Link>
+        <Link to="/NaoNight"> NAONIGHT </Link>
       </li>
       <li>
         <Link className="heart" to={""}>

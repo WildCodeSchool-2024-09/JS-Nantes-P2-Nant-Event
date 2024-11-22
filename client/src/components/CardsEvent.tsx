@@ -18,6 +18,11 @@ export default function CardsEvent({ index, data }: CardsEventProps) {
   return (
     <>
       <section className="card-event-section">
+        {event.media_url ? (
+          <img src={event.media_url} alt="Affiche de l'évènement" />
+        ) : (
+          <img src="../../public/koala.jpg" alt="Koala" />
+        )}
         <img src={event?.media_url} alt="Affiche Evenement" />
         <article className="event-details">
           <h3>{event?.nom}</h3>

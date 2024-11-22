@@ -3,10 +3,12 @@ import NantesEventsMap from "../components/NantesEventsMap";
 
 function MapPage() {
   return (
-    <div>
-      <NantesEventsMap />
-      <ContainerMapCard />
-    </div>
+    <>
+      <div>
+        <NantesEventsMap />
+        <ContainerMapCard />
+      </div>
+    </>
   );
 }
 

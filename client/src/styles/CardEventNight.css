@@ -22,14 +22,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* /* -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: .3s ease-in-out; */
+
   transition: .3s ease-in-out;
 }
 
 .img-card-night:hover {
-  /* -webkit-transform: scale(1.2); */
   transform: scale(1.2);
   cursor: pointer;
 }
@@ -74,4 +71,25 @@
   align-items: center;
   font-size: larger;
   font-size: 16px;
+}
+
+@media screen and (max-width: 850px) {
+  .cards-event-night {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+  .info-card-night {
+    width: 300px;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .figure-image {
+    width: 400px;
+  }
 }
