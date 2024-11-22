@@ -4,6 +4,7 @@ import BodyNight from "../components/BodyNight";
 import HeaderNight from "../components/HeaderNight";
 
 import "../styles/NaoNight.css";
+import Footer from "../components/Footer";
 
 function NaoNight() {
   return (
@@ -11,7 +12,7 @@ function NaoNight() {
       <section className="body-naonight">
         <HeaderNight />
         <BodyNight />
-        {/* </Footer> */}
+        <Footer />
         <main>
           <Outlet />
         </main>
