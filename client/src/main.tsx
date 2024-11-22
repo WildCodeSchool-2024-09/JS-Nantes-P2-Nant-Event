@@ -6,6 +6,7 @@ import "./styles/Global.css";
 import App from "./App";
 import Random from "./components/Random";
 import HomePage from "./pages/HomePage";
+import MapPage from "./pages/MapPage";
 import NaoNight from "./pages/NaoNight";
 
 const router = createBrowserRouter([
@@ -26,6 +27,11 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
   },
+  {
+    path: "/MapPage",
+    element: <MapPage />,
+  },
+
   {
     path: "/Naonight",
     element: <NaoNight />,

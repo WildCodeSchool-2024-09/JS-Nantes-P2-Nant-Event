@@ -1,0 +1,21 @@
+.card-container {
+  margin: 90px auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  gap: 40px;
+  justify-content: space-evenly;
+  box-shadow: 0 0 10px #e6b50440;
+  padding: 50px;
+}
+
+@media (max-width: 800px) {
+  .card-container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 400px) {
+  .card-container {
+    flex-direction: column;
+  }
+}

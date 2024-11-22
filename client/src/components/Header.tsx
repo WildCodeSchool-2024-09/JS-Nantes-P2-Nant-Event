@@ -13,25 +13,33 @@ const Header = () => {
   const MenuItems = () => (
     <>
       <li>
-        <a href="/">AGENDA</a>
+        <Link className="agenda" to={""}>
+          AGENDA
+        </Link>
       </li>
-      <li>
-        <DropDown options={["Item 1", "Item 2", "Item 3"]} />
+      <li className="dropdown">
+        <DropDown
+          options={[
+            "Événements musicaux",
+            "Événements sportifs",
+            "Événements artistiques",
+            "Spectacles",
+          ]}
+        />
       </li>
-
       <li>
         <Link to="/Random"> ALEATOIRE </Link>
       </li>
       <li>
-        <a href="/">MAP</a>
+        <Link to="/MapPage">MAP</Link>
       </li>
       <li>
         <Link to="/NaoNight"> NAONIGHT </Link>
       </li>
       <li>
-        <a className="heart" href="/">
+        <Link className="heart" to={""}>
           ❤
-        </a>
+        </Link>
       </li>
     </>
   );
@@ -56,20 +64,7 @@ const Header = () => {
                   aria-expanded={isExpanded}
                   onClick={toggle}
                   className="btn"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24"
-                    width="24"
-                    viewBox="0 -960 960 960"
-                    fill="#e8eaed"
-                    role="img"
-                  >
-                    <title>Menu</title>
-                    <desc>Icône de menu hamburger à trois lignes</desc>
-                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                  </svg>
-                </button>
+                />
               </li>
               <MenuItems />
             </ul>

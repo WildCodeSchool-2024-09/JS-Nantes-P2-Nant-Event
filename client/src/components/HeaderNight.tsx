@@ -23,7 +23,7 @@ function HeaderNight() {
             ALEATOIRE
           </Link>
 
-          <Link to={""} className="link-style">
+          <Link to="/MapPage" className="link-style">
             MAP
           </Link>
 
