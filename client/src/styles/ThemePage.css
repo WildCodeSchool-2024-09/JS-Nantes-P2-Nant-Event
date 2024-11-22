@@ -95,23 +95,28 @@
   color: #fffb17;
 }
 
-details[open] {
+.theme-summary {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.theme-info[open] {
   overflow-y: scroll;
   overflow-x: hidden;
-  height: 16vh;
+  height: 13vh;
   width: 40vw;
 }
 
-details > :first-child {
+.theme-info > :first-child {
   font-weight: bolder;
   text-decoration: underline;
 }
 
-details[open] > summary {
+.theme-info[open] > summary {
   visibility: hidden;
 }
 
-details[open] > summary::before {
+.theme-info[open] > summary::before {
   text-decoration: solid;
   visibility: visible;
   content: "Moins d'informations";

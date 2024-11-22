@@ -34,15 +34,22 @@
   display: none;
 }
 
-details :first-child {
+.card-event-detail :first-child {
   text-decoration: underline;
   font-weight: bold;
 }
-details[open] > summary {
-  visibility: hidden;
+
+.card-event-summary {
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
-details[open] > summary::before {
+.card-event-detail[open] > summary {
+  visibility: hidden;
+  overflow-y: scroll;
+}
+
+.card-event-detail[open] > summary::before {
   visibility: visible;
   content: "Moins d'informations";
 }
@@ -56,10 +63,6 @@ details[open] > summary::before {
   width: 99%;
   height: 95%;
   cursor: pointer;
-
-  .hide-text {
-    display: block;
-  }
 }
 
 .event-details h3 {
