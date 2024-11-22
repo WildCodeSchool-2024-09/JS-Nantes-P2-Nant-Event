@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import "../styles/Event.css";
-
 interface Event {
   id_manif: number;
   nom: string;
@@ -15,7 +14,6 @@ interface Event {
   code_postal: number;
   url_site: string;
 }
-
 function Event() {
   const [event, setEvent] = useState<Event | null>(null);
   useEffect(() => {
@@ -27,7 +25,6 @@ function Event() {
         setEvent(data.results[6]);
       });
   }, []);
-
   return (
     <main className="page">
       <h1 className="event-title">{event?.nom}</h1>
@@ -55,5 +52,4 @@ function Event() {
     </main>
   );
 }
-
 export default Event;
