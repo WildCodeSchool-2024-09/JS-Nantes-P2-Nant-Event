@@ -1,8 +1,8 @@
 .card-container {
-  margin: 90px auto;
+  margin: 30px auto;
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
+  width: 97%;
   gap: 40px;
   justify-content: space-evenly;
   box-shadow: 0 0 10px #e6b50440;

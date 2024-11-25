@@ -7,6 +7,7 @@ interface EventData {
   lieu?: string;
   adresse?: string;
   media_url?: string;
+  date?: string;
 }
 
 interface MapCardProps {
@@ -16,11 +17,32 @@ interface MapCardProps {
 function MapCard({ data }: MapCardProps) {
   const event = data;
 
+  const dateString = event?.date || "";
+  const [_, month, day] = dateString.split("-");
+
+  const getMonthName = (monthNumber: string) => {
+    const months = [
+      "JAN",
+      "FEV",
+      "MAR",
+      "AVR",
+      "MAI",
+      "JUN",
+      "JUL",
+      "AOU",
+      "SEP",
+      "OCT",
+      "NOV",
+      "DEC",
+    ];
+    return months[Number.parseInt(monthNumber) - 1] || "";
+  };
+
   return (
     <article className="event-card">
-      <time className="date" dateTime="2024-11-06">
-        <span className="date-month">NOV</span>
-        <span className="date-day">6</span>
+      <time className="date" dateTime={event?.date}>
+        <span className="date-month">{getMonthName(month)}</span>
+        <span className="date-day">{Number.parseInt(day) || "6"}</span>
       </time>
       <section className="event-info">
         <h2 className="event-title">{event?.nom}</h2>
@@ -38,7 +60,7 @@ function MapCard({ data }: MapCardProps) {
             alt="Affiche de l'évènement"
           />
         ) : (
-          <img src="../../public/koala.jpg" alt="Koala" />
+          <img className="event-img" src="../../public/koala.jpg" alt="Koala" />
         )}
       </figure>
     </article>
