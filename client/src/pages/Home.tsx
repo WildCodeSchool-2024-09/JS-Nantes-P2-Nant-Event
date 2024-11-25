@@ -1,6 +1,7 @@
 import BodyHome from "../components/BodyHome";
 import Carousel from "../components/Carousel";
 import { data } from "../components/Data";
+import ScrollToTopButton from "../components/Scrolltotop";
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
         <Carousel imgSrc={data} />
       </div>
       <BodyHome />
+      <ScrollToTopButton />
     </>
   );
 }
