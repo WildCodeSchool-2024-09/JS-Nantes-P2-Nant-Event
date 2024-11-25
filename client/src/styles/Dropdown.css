@@ -1,4 +1,3 @@
-/* Conserver les styles du bouton */
 .drop-btn {
   background-color: transparent;
   color: white;
@@ -15,26 +14,27 @@
   cursor: pointer;
 }
 
-/* Ajouter un conteneur avec position relative */
 .dropdown-container {
   position: relative;
   display: inline-block;
 }
 
-/* Modifier le conteneur du menu déroulant */
 .extItem1 {
-  position: absolute; /* Position absolue par rapport au conteneur */
-  top: 100%; /* Place le menu sous le bouton */
-  left: 0; /* Aligne à gauche du bouton */
+  position: absolute;
+  top: 100%;
+  left: 0;
   background-color: rgba(0, 0, 0, 0.763);
   width: 150px;
   border: rgb(90, 82, 82) 2px solid;
   border-radius: 10px;
-  z-index: 1000; /* Assure que le menu est au-dessus des autres éléments */
-  margin-top: 10px; /* Espace entre le bouton et le menu */
+  z-index: 1000;
+  margin-top: 10px;
+  padding: 5px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-/* Conserver les styles des items */
 .listItem {
   color: white;
   padding: 15px;
@@ -46,5 +46,5 @@
   color: #e5cb6b;
   background-color: black;
   cursor: pointer;
-  border-radius: 8px; /* Optional: pour arrondir les coins au hover */
+  border-radius: 8px;
 }

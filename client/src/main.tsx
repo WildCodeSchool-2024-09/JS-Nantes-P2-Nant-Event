@@ -5,14 +5,14 @@ import "./styles/Global.css";
 import App from "./App";
 import Agenda from "./pages/Agenda";
 import Aleatoire from "./pages/Aleatoire";
+import Art from "./pages/Art";
 import Home from "./pages/Home";
 import HomePage from "./pages/HomePage";
 import MapPage from "./pages/MapPage";
-import NaoNight from "./pages/NaoNight";
 import Music from "./pages/Music";
-import Art from "./pages/Art";
-import Sport from "./pages/Sport";
+import NaoNight from "./pages/NaoNight";
 import Show from "./pages/Show";
+import Sport from "./pages/Sport";
 
 const router = createBrowserRouter([
   {
