@@ -1,4 +1,5 @@
 import Calendar from "../components/Calendar";
+import ScrollToTopButton from "../components/Scrolltotop";
 
 function Agenda() {
   return (
@@ -6,6 +7,7 @@ function Agenda() {
       <div>
         <Calendar />
       </div>
+      <ScrollToTopButton />
     </>
   );
 }
