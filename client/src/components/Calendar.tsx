@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import "../styles/Calendar.css";
-import type { EventI } from "../types/Events";
 import { Link } from "react-router-dom";
+import type { EventI } from "../types/Events";
 
 type ValuePiece = Date | null;
 type Value = ValuePiece | [ValuePiece, ValuePiece];

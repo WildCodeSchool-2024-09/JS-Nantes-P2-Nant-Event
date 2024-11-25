@@ -5,11 +5,11 @@ import "./styles/Global.css";
 import App from "./App";
 import Agenda from "./pages/Agenda";
 import Aleatoire from "./pages/Aleatoire";
+import Evenement from "./pages/Evenement";
 import Home from "./pages/Home";
 import HomePage from "./pages/HomePage";
 import MapPage from "./pages/MapPage";
 import NaoNight from "./pages/NaoNight";
-import Evenement from "./pages/Evenement";
 
 const router = createBrowserRouter([
   {
