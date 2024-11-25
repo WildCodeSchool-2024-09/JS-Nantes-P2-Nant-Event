@@ -49,11 +49,13 @@ const Header = () => {
       <nav>
         <div className="container">
           <div className="img-container">
-            <img
-              className="logo"
-              src="/logo_nantesEvent.png"
-              alt="Nantes Event Logo"
-            />
+            <Link to="/Home">
+              <img
+                className="logo"
+                src="/logo_nantesEvent.png"
+                alt="Nantes Event Logo"
+              />
+            </Link>
           </div>
 
           {isExpanded && (
