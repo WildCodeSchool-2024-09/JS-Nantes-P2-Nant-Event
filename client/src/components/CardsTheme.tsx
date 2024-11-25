@@ -13,6 +13,7 @@ interface Event {
   description_evt: string;
   lieu: string;
   url_site: string;
+  id_manif: number;
 }
 
 export default function CardsTheme({ name, apiUrl }: CardsThemeI) {

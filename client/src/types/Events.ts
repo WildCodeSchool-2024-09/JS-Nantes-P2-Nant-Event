@@ -6,4 +6,5 @@ export interface EventI {
   nom: string;
   id: number;
   media_url: string;
+  id_manif: number;
 }

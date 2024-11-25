@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import CardMusic from "./CardMusic";
 
 interface EventData {
-  id_manif: string;
+  id_manif: number;
   date: string;
   types_libelles: string;
   description_evt: string;
@@ -30,7 +30,7 @@ function ShowPage() {
         <h1 className="theme-title"> Spectacles </h1>
 
         {event?.map((el) => {
-          return <CardMusic key={el.id_manif} data={el} />;
+          return <CardMusic key={el.id_manif} data={el} id={el.id_manif} />;
         })}
       </section>
     </>

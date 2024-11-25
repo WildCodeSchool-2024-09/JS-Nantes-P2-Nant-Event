@@ -3,6 +3,7 @@ import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import "../styles/Calendar.css";
 import type { EventI } from "../types/Events";
+import { Link } from "react-router-dom";
 
 type ValuePiece = Date | null;
 type Value = ValuePiece | [ValuePiece, ValuePiece];
@@ -38,19 +39,21 @@ function MyCalendar() {
             return (
               <div key={el.id} className="agenda-container">
                 <div className="event-img">
-                  {el.media_url ? (
-                    <img
-                      src={el.media_url}
-                      alt="Affiche de l'évènement"
-                      className="img-event-date"
-                    />
-                  ) : (
-                    <img
-                      src="../../public/koala.jpg"
-                      alt="Koala"
-                      className="img-event-date"
-                    />
-                  )}
+                  <Link to={`/event/${el.id_manif}`}>
+                    {el.media_url ? (
+                      <img
+                        src={el.media_url}
+                        alt="Affiche de l'évènement"
+                        className="img-event-date"
+                      />
+                    ) : (
+                      <img
+                        src="../../public/koala.jpg"
+                        alt="Koala"
+                        className="img-event-date"
+                      />
+                    )}
+                  </Link>
                 </div>
                 <div className="event-text">
                   <h2 className="agenda-event-title">{el.nom}</h2>

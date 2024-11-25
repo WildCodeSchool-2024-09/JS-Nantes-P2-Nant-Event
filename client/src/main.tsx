@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import HomePage from "./pages/HomePage";
 import MapPage from "./pages/MapPage";
 import NaoNight from "./pages/NaoNight";
+import Evenement from "./pages/Evenement";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,14 @@ const router = createBrowserRouter([
       {
         path: "MapPage",
         element: <MapPage />,
+      },
+      {
+        path: "Event/:id",
+        element: <Evenement />,
+        loader: ({ params }) =>
+          fetch(
+            `https://data.opendatasoft.com/api/explore/v2.1/catalog/datasets/244400404_agenda-evenements-nantes-metropole_v2@nantesmetropole/records?limit=20&refine=id_manif%3A${params.id}`,
+          ),
       },
     ],
   },

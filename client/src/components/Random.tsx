@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "../styles/Random.css";
+import { Link } from "react-router-dom";
 
 interface Event {
   id_manif: number;
@@ -54,19 +55,21 @@ function Random() {
     <>
       <div className="random">
         <h1 className="title">Pas d'idée de sortie ? </h1>
-        {currentEvent.media_url ? (
-          <img
-            src={currentEvent.media_url}
-            alt="Affiche évènement"
-            className="poster"
-          />
-        ) : (
-          <img
-            src="/koala.jpg"
-            alt="no images available for this event"
-            className="poster"
-          />
-        )}
+        <Link to={`/event/${currentEvent.id_manif}`}>
+          {currentEvent.media_url ? (
+            <img
+              src={currentEvent.media_url}
+              alt="Affiche évènement"
+              className="event-poster"
+            />
+          ) : (
+            <img
+              src="/koala.jpg"
+              alt="no images available for this event"
+              className="event-poster"
+            />
+          )}
+        </Link>
         <h2 className="event_title">{currentEvent.nom}</h2>
         <p className="event_info">{currentEvent.emetteur}</p>
         <p className="event_info">{currentEvent.date}</p>

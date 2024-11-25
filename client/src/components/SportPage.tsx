@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import CardMusic from "./CardMusic";
 
 interface EventData {
-  id_manif: string;
+  id_manif: number;
   date: string;
   types_libelles: string;
   description_evt: string;
@@ -10,6 +10,8 @@ interface EventData {
 
 interface EventApi {
   results: EventData[];
+  id: number;
+  id_manif?: number;
 }
 
 function SportPage() {
@@ -29,8 +31,10 @@ function SportPage() {
       <section className="theme-body">
         <h1 className="theme-title"> Evènement Sportifs </h1>
 
-        {event?.map((el) => {
-          return <CardMusic key={el.id_manif} data={el} />;
+        {event?.map((event) => {
+          return (
+            <CardMusic key={event.id_manif} data={event} id={event.id_manif} />
+          );
         })}
       </section>
     </>
