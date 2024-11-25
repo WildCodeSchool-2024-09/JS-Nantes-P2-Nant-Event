@@ -3,9 +3,7 @@ import SportPage from "../components/SportPage";
 function Sport() {
   return (
     <>
-      <div>
-        <SportPage />
-      </div>
+      <SportPage />
     </>
   );
 }

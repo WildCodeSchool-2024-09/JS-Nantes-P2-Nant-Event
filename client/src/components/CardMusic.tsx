@@ -37,7 +37,7 @@ function CardMusic({ data }: CardEventProps) {
           <p className="theme-type">{event.types_libelles}</p>
           <p className="title-event">{event?.nom}</p>
           <details className="theme-info">
-            <summary className="theme-summary">Plus d'informations</summary>
+            <summary>Plus d'informations</summary>
             {event?.description_evt}
           </details>
           <p className="theme-date">{event.date}</p>

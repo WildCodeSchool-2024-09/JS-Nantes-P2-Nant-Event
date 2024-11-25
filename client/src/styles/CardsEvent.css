@@ -39,7 +39,7 @@
   font-weight: bold;
 }
 
-.card-event-summary {
+.card-event-detail > summary {
   overflow-x: hidden;
   overflow-y: hidden;
 }

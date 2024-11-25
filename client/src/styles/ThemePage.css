@@ -95,7 +95,7 @@
   color: #fffb17;
 }
 
-.theme-summary {
+.theme-info > summary {
   overflow-x: hidden;
   overflow-y: hidden;
 }

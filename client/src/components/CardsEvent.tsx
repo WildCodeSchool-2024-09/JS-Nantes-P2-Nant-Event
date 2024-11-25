@@ -30,9 +30,7 @@ export default function CardsEvent({ index, data }: CardsEventProps) {
             {event?.lieu} {event.date}
           </p>
           <details className="card-event-detail">
-            <summary className="card-event-summary">
-              Plus d'informations
-            </summary>
+            <summary>Plus d'informations</summary>
             {event?.description_evt}
           </details>
         </article>

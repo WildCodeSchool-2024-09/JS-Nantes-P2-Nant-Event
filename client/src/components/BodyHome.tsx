@@ -12,35 +12,24 @@ export default function BodyHome() {
     arts: "https://data.opendatasoft.com/api/explore/v2.1/catalog/datasets/244400404_agenda-evenements-nantes-metropole_v2@nantesmetropole/records?limit=20&refine=types_libelles%3AProjection",
   };
 
-  const links = {
-    musicLink: "/Music",
-    sportLink: "/Sport",
-    artLink: "/Art",
-    showLink: "/Show",
-  };
-
   return (
     <>
       <section className="section-body-home">
         <CardsTheme
           name="Evènements musicaux"
           apiUrl={urls.music}
-          links={links.musicLink}
+          link="/Music"
         />
         <CardsTheme
           name="Evènements sportifs"
           apiUrl={urls.sports}
-          links={links.sportLink}
+          link="/Sport"
         />
-        <CardsTheme
-          name="Spectacles"
-          apiUrl={urls.shows}
-          links={links.showLink}
-        />
+        <CardsTheme name="Spectacles" apiUrl={urls.shows} link="Show" />
         <CardsTheme
           name="Evènements artistiques"
           apiUrl={urls.arts}
-          links={links.artLink}
+          link="Art"
         />
       </section>
     </>

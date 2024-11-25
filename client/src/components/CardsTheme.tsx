@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 interface CardsThemeI {
   name: string;
   apiUrl: string;
-  links: string;
+  link: string;
 }
 interface Event {
   nom: string;
@@ -17,7 +17,7 @@ interface Event {
   url_site: string;
 }
 
-export default function CardsTheme({ name, apiUrl, links }: CardsThemeI) {
+export default function CardsTheme({ name, apiUrl, link }: CardsThemeI) {
   const [event, setEvent] = useState<Event[]>([]);
   useEffect(() => {
     fetch(apiUrl)
@@ -37,7 +37,7 @@ export default function CardsTheme({ name, apiUrl, links }: CardsThemeI) {
         <main className="title-card-event">
           <h2 className="title-theme">{name}</h2>
           <p className="voir-plus">
-            <Link to={links}> Voir plus</Link>
+            <Link to={link}> Voir plus</Link>
           </p>
         </main>
         <article className="event-align">
