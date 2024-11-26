@@ -48,6 +48,7 @@ function CardMusic({ data, id }: CardEventProps) {
           </details>
           <p className="theme-date">{event.date}</p>
           <p className="theme-lieu">{event.lieu}</p>
+          <p>coucou</p>
         </div>
       </section>
     </>
