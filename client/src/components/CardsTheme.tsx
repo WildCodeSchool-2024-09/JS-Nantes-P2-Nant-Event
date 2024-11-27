@@ -3,12 +3,7 @@ import "../styles/CardsTheme.css";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import type { EventI } from "../types/Events";
-
-interface CardsThemeI {
-  name: string;
-  apiUrl: string;
-  link: string;
-}
+import type { CardsThemeI } from "../types/Events";
 
 export default function CardsTheme({ name, apiUrl, link }: CardsThemeI) {
   const [event, setEvent] = useState<EventI[]>([]);

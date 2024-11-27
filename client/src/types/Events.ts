@@ -21,3 +21,9 @@ export interface EventApi {
   results: EventI[];
   id: number;
 }
+
+export interface CardsThemeI {
+  name: string;
+  apiUrl: string;
+  link: string;
+}

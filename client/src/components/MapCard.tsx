@@ -2,16 +2,6 @@ import { Link } from "react-router-dom";
 import "../styles/MapCard.css";
 import type { EventI } from "../types/Events";
 
-// interface EventData {
-//   id_manif: string | number;
-//   nom?: string;
-//   heure_debut?: string;
-//   lieu?: string;
-//   adresse?: string;
-//   media_url?: string;
-//   date?: string;
-// }
-
 interface MapCardProps {
   data: EventI;
 }
