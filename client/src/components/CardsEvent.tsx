@@ -14,12 +14,12 @@ export default function CardsEvent({ index, data }: CardsEventProps) {
       <section className="card-event-section">
         <Link to={`/event/${event.id_manif}`}>
           {event.media_url ? (
-            <img src={event.media_url} alt="Affiche de l'évènement" />
+            <img src={event.media_url} alt="Affiche de l'événement" />
           ) : (
             <img src="/koala.jpg" alt="Koala" />
           )}
         </Link>
-        <img src={event?.media_url} alt="Affiche Evenement" />
+        <img src={event?.media_url} alt="Affiche Evénement" />
         <article className="event-details">
           <h3>{event?.nom}</h3>
           <p>

@@ -19,7 +19,7 @@ function CardMusic({ data, id }: CardEventProps) {
               <img
                 className="theme-affiche"
                 src={event.media_url}
-                alt="Affiche de l'évènement"
+                alt="Affiche de l'événement"
               />
             ) : (
               <img className="theme-affiche" src="/koala.jpg" alt="Koala" />
