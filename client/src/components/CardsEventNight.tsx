@@ -19,7 +19,7 @@ function CardsEventNight({ eventNight }: { eventNight: arrayEventNightI }) {
           <img
             className="img-card-night"
             src={eventNight.imgSrc}
-            alt="evenement"
+            alt="événement"
           />
         </figure>
         <div className="info-card-night">

@@ -47,7 +47,7 @@ function Random() {
     <>
       <div className="random">
         <h1 className="title">Pas d'idée de sortie ? </h1>
-        <Link to={`/event/${currentEvent.id_manif}`}>
+        <Link className="random-link" to={`/event/${currentEvent.id_manif}`}>
           {currentEvent.media_url ? (
             <img
               src={currentEvent.media_url}
@@ -65,7 +65,7 @@ function Random() {
         <h2 className="event_title">{currentEvent.nom}</h2>
         <p className="event_info">{currentEvent.emetteur}</p>
         <p className="event_info">{currentEvent.date}</p>
-        <button type="button" onClick={handleRefresh} className="cta">
+        <button type="button" onClick={handleRefresh} className="cta-random">
           Relancer
         </button>
         <a

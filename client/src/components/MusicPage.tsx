@@ -18,7 +18,7 @@ function MusicPage() {
   return (
     <>
       <section className="theme-body">
-        <h1 className="theme-title"> Evènement musicaux </h1>
+        <h1 className="theme-title"> Evénement musicaux </h1>
 
         {event?.map((event) => {
           return (

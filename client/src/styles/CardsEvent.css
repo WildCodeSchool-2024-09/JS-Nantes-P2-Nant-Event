@@ -52,6 +52,7 @@
 .card-event-detail[open] > summary::before {
   visibility: visible;
   content: "Moins d'informations";
+  cursor: pointer;
 }
 
 .event-details:hover {
