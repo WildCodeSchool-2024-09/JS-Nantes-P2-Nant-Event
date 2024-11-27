@@ -1,0 +1,54 @@
+.body-user {
+  padding: 50px;
+}
+
+.user-card {
+  width: 500px;
+  height: 400px;
+  background-color: rgb(200, 200, 200);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-image: url("public/logo_apostrophe_blanc.png");
+  background-position: 10% 90%;
+  background-size: 75px;
+  background-repeat: no-repeat;
+}
+
+.form-user {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.user-card h2 {
+  color: white;
+  font-family: "Racing Sans One", sans-serif;
+  font-weight: 400;
+  font-size: 56px;
+}
+
+.user-card p {
+  font-family: "Montserrat", serif;
+}
+
+.user-card input {
+  width: 100%;
+  border-radius: 5px;
+  border-style: none;
+  height: 24px;
+}
+
+.user-card button {
+  border-radius: 5px;
+  background-color: #e6b504;
+  height: 24px;
+  font-family: "Montserrat", serif;
+  margin-top: 8px;
+  border-width: 2px;
+}

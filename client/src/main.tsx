@@ -8,6 +8,7 @@ import MyCalendar from "./components/Calendar";
 import HomePage from "./pages/HomePage";
 import MapPage from "./pages/MapPage";
 import NaoNight from "./pages/NaoNight";
+import UserPage from "./pages/UserPage";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
   {
     path: "/Calendar",
     element: <MyCalendar />,
+  },
+  {
+    path: "/Userpage",
+    element: <UserPage />,
   },
 ]);
 

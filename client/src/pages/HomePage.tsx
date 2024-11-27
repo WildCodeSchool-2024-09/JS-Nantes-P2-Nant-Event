@@ -1,7 +1,9 @@
+import { useState } from "react";
 import "../styles/HomePage.css";
 import { Link, Outlet } from "react-router-dom";
 
 function HomePage() {
+  const [counter, setCounter] = useState(0);
   return (
     <>
       <div className="accueil-logo">
@@ -16,7 +18,7 @@ function HomePage() {
         </button>
       </div>
       <main>
-        <Outlet />
+        <Outlet context={{ counter, setCounter }} />
       </main>
     </>
   );
