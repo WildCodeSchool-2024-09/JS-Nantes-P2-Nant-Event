@@ -37,11 +37,13 @@ const HeaderNight = () => {
     <nav>
       <div className="container">
         <div className="img-container">
-          <img
-            className="logo"
-            src="/logo_nao_night.png"
-            alt="Nantes Event Logo"
-          />
+          <Link to="/Home">
+            <img
+              className="logo"
+              src="/logo_nao_night.png"
+              alt="Nantes Event Logo"
+            />
+          </Link>
         </div>
 
         {isExpanded && (
