@@ -1,17 +1,10 @@
 import { useEffect, useState } from "react";
 import "../styles/Random.css";
-
-interface Event {
-  id_manif: number;
-  nom: string;
-  media_url: string;
-  emetteur: string;
-  date: string;
-  lien_agenda: string;
-}
+import { Link } from "react-router-dom";
+import type { EventI } from "../types/Events";
 
 function Random() {
-  const [events, setEvents] = useState<[] | Event[]>([]);
+  const [events, setEvents] = useState<[] | EventI[]>([]);
   const [randomIndex, setRandomIndex] = useState<number | null>(null);
 
   useEffect(() => {
@@ -20,7 +13,7 @@ function Random() {
     )
       .then((response) => response.json())
       .then((data) => {
-        const results: Event[] = data.results;
+        const results: EventI[] = data.results;
 
         const singleIds: Record<number, number> = {};
 
@@ -54,19 +47,21 @@ function Random() {
     <>
       <div className="random">
         <h1 className="title">Pas d'idée de sortie ? </h1>
-        {currentEvent.media_url ? (
-          <img
-            src={currentEvent.media_url}
-            alt="Affiche évènement"
-            className="poster"
-          />
-        ) : (
-          <img
-            src="/koala.jpg"
-            alt="no images available for this event"
-            className="poster"
-          />
-        )}
+        <Link to={`/event/${currentEvent.id_manif}`}>
+          {currentEvent.media_url ? (
+            <img
+              src={currentEvent.media_url}
+              alt="Affiche évènement"
+              className="event-poster"
+            />
+          ) : (
+            <img
+              src="/koala.jpg"
+              alt="no images available for this event"
+              className="event-poster"
+            />
+          )}
+        </Link>
         <h2 className="event_title">{currentEvent.nom}</h2>
         <p className="event_info">{currentEvent.emetteur}</p>
         <p className="event_info">{currentEvent.date}</p>
