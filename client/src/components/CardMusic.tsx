@@ -1,18 +1,9 @@
 import { Link } from "react-router-dom";
 import "../styles/ThemePage.css";
-
-interface EventData {
-  media_url?: string;
-  types_libelles: string;
-  nom?: string;
-  description_evt: string;
-  date: string;
-  lieu?: string;
-  id_manif: number;
-}
+import type { EventI } from "../types/Events";
 
 interface CardEventProps {
-  data: EventData;
+  data: EventI;
   id: number;
   id_manif?: number;
 }
@@ -31,11 +22,7 @@ function CardMusic({ data, id }: CardEventProps) {
                 alt="Affiche de l'évènement"
               />
             ) : (
-              <img
-                className="theme-affiche"
-                src="../../public/koala.jpg"
-                alt="Koala"
-              />
+              <img className="theme-affiche" src="/koala.jpg" alt="Koala" />
             )}
           </Link>
         </figure>
@@ -48,7 +35,6 @@ function CardMusic({ data, id }: CardEventProps) {
           </details>
           <p className="theme-date">{event.date}</p>
           <p className="theme-lieu">{event.lieu}</p>
-          <p>coucou</p>
         </div>
       </section>
     </>

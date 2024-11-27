@@ -5,6 +5,19 @@ export interface EventI {
   lieu: string;
   nom: string;
   id: number;
-  media_url: string;
   id_manif: number;
+  media_url?: string;
+  types_libelles: string;
+  themes_libelles: string;
+  code_postal: number;
+  url_site: string;
+  id_agenda_in: number;
+  heure_debut: number;
+  emetteur: string;
+  lien_agenda: string;
+}
+
+export interface EventApi {
+  results: EventI[];
+  id: number;
 }

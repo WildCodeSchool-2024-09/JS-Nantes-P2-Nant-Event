@@ -1,19 +1,10 @@
 import { useEffect, useState } from "react";
+import type { EventI } from "../types/Events";
+import type { EventApi } from "../types/Events";
 import CardMusic from "./CardMusic";
 
-interface EventData {
-  id_manif: number;
-  date: string;
-  types_libelles: string;
-  description_evt: string;
-}
-
-interface EventApi {
-  results: EventData[];
-}
-
 function ArtsPage() {
-  const [event, setEvent] = useState<EventData[]>([]);
+  const [event, setEvent] = useState<EventI[]>([]);
   useEffect(() => {
     fetch(
       "https://data.opendatasoft.com/api/explore/v2.1/catalog/datasets/244400404_agenda-evenements-nantes-metropole_v2@nantesmetropole/records?limit=20&refine=types_libelles%3AProjection",

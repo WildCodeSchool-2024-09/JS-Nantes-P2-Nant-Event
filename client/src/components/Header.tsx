@@ -18,14 +18,7 @@ const Header = () => {
         </Link>
       </li>
       <li className="dropdown">
-        <DropDown
-          options={[
-            "Événements musicaux",
-            "Événements sportifs",
-            "Événements artistiques",
-            "Spectacles",
-          ]}
-        />
+        <DropDown />
       </li>
       <li>
         <Link to="/Aleatoire"> ALEATOIRE </Link>

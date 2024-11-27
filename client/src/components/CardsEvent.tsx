@@ -1,18 +1,10 @@
 import { Link } from "react-router-dom";
 import "../styles/CardsEvent.css";
+import type { EventI } from "../types/Events";
 
 interface CardsEventProps {
   index: number;
-  data: Event[];
-}
-
-interface Event {
-  nom: string;
-  media_url: string;
-  date: string;
-  description_evt: string;
-  lieu: string;
-  id_manif: number;
+  data: EventI[];
 }
 
 export default function CardsEvent({ index, data }: CardsEventProps) {
@@ -24,7 +16,7 @@ export default function CardsEvent({ index, data }: CardsEventProps) {
           {event.media_url ? (
             <img src={event.media_url} alt="Affiche de l'évènement" />
           ) : (
-            <img src="../../public/koala.jpg" alt="Koala" />
+            <img src="/koala.jpg" alt="Koala" />
           )}
         </Link>
         <img src={event?.media_url} alt="Affiche Evenement" />
@@ -33,8 +25,8 @@ export default function CardsEvent({ index, data }: CardsEventProps) {
           <p>
             {event?.lieu} {event.date}
           </p>
-          <details>
-            <summary className="hide-text">Plus d'informations</summary>
+          <details className="card-event-detail">
+            <summary>Plus d'informations</summary>
             {event?.description_evt}
           </details>
         </article>

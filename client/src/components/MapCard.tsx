@@ -1,18 +1,19 @@
 import { Link } from "react-router-dom";
 import "../styles/MapCard.css";
+import type { EventI } from "../types/Events";
 
-interface EventData {
-  id_manif: string | number;
-  nom?: string;
-  heure_debut?: string;
-  lieu?: string;
-  adresse?: string;
-  media_url?: string;
-  date?: string;
-}
+// interface EventData {
+//   id_manif: string | number;
+//   nom?: string;
+//   heure_debut?: string;
+//   lieu?: string;
+//   adresse?: string;
+//   media_url?: string;
+//   date?: string;
+// }
 
 interface MapCardProps {
-  data: EventData;
+  data: EventI;
 }
 
 function MapCard({ data }: MapCardProps) {
@@ -62,11 +63,7 @@ function MapCard({ data }: MapCardProps) {
               alt="Affiche de l'évènement"
             />
           ) : (
-            <img
-              className="event-img"
-              src="../../public/koala.jpg"
-              alt="Koala"
-            />
+            <img className="event-img" src="/koala.jpg" alt="Koala" />
           )}
         </Link>
       </figure>

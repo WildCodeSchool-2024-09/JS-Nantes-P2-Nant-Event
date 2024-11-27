@@ -3,9 +3,7 @@ import Event from "../components/Event";
 function Evenement() {
   return (
     <>
-      <div>
-        <Event />
-      </div>
+      <Event />
     </>
   );
 }

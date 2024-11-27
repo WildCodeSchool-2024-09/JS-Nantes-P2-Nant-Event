@@ -38,7 +38,7 @@ function MyCalendar() {
           filteredArray?.map((el) => {
             return (
               <div key={el.id} className="agenda-container">
-                <div className="event-img">
+                <div className="calendar-img">
                   <Link to={`/event/${el.id_manif}`}>
                     {el.media_url ? (
                       <img
@@ -48,7 +48,7 @@ function MyCalendar() {
                       />
                     ) : (
                       <img
-                        src="../../public/koala.jpg"
+                        src="/koala.jpg"
                         alt="Koala"
                         className="img-event-date"
                       />
@@ -57,7 +57,7 @@ function MyCalendar() {
                 </div>
                 <div className="event-text">
                   <h2 className="agenda-event-title">{el.nom}</h2>
-                  <details>
+                  <details className="calendar-detail">
                     <summary className="summary-agenda">
                       Plus d'informations
                     </summary>

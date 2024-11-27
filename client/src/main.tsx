@@ -5,11 +5,15 @@ import "./styles/Global.css";
 import App from "./App";
 import Agenda from "./pages/Agenda";
 import Aleatoire from "./pages/Aleatoire";
+import Art from "./pages/Art";
 import Evenement from "./pages/Evenement";
 import Home from "./pages/Home";
 import HomePage from "./pages/HomePage";
 import MapPage from "./pages/MapPage";
+import Music from "./pages/Music";
 import NaoNight from "./pages/NaoNight";
+import Show from "./pages/Show";
+import Sport from "./pages/Sport";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +39,22 @@ const router = createBrowserRouter([
       {
         path: "MapPage",
         element: <MapPage />,
+      },
+      {
+        path: "Music",
+        element: <Music />,
+      },
+      {
+        path: "Sport",
+        element: <Sport />,
+      },
+      {
+        path: "Show",
+        element: <Show />,
+      },
+      {
+        path: "Art",
+        element: <Art />,
       },
       {
         path: "Event/:id",
