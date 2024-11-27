@@ -11,7 +11,7 @@ const DropDownNight = ({ options }: { options: string[] }) => {
 
   return (
     <div className="dropdown-container">
-      <button type="button" onClick={toggleDropdown} className="drop-btn">
+      <button type="button" onClick={toggleDropdown} className="drop-btn-night">
         THEMES
         {isExpanded && <CaretUp size={24} />}
         {!isExpanded && <CaretDown size={24} />}
