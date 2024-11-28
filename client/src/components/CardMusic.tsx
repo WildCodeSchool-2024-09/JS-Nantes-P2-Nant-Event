@@ -1,37 +1,30 @@
+import { Link } from "react-router-dom";
 import "../styles/ThemePage.css";
-
-interface EventData {
-  media_url?: string;
-  types_libelles: string;
-  nom?: string;
-  description_evt: string;
-  date: string;
-  lieu?: string;
-}
+import type { EventI } from "../types/Events";
 
 interface CardEventProps {
-  data: EventData;
+  data: EventI;
+  id: number;
+  id_manif?: number;
 }
 
-function CardMusic({ data }: CardEventProps) {
+function CardMusic({ data, id }: CardEventProps) {
   const event = data;
   return (
     <>
       <section className="theme-container">
         <figure className="theme-image">
-          {event.media_url ? (
-            <img
-              className="theme-affiche"
-              src={event.media_url}
-              alt="Affiche de l'évènement"
-            />
-          ) : (
-            <img
-              className="theme-affiche"
-              src="../../public/koala.jpg"
-              alt="Koala"
-            />
-          )}
+          <Link to={`/event/${id}`}>
+            {event.media_url ? (
+              <img
+                className="theme-affiche"
+                src={event.media_url}
+                alt="Affiche de l'événement"
+              />
+            ) : (
+              <img className="theme-affiche" src="/koala.jpg" alt="Koala" />
+            )}
+          </Link>
         </figure>
         <div className="info-theme">
           <p className="theme-type">{event.types_libelles}</p>

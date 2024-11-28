@@ -2,23 +2,11 @@ import CardsEvent from "./CardsEvent";
 import "../styles/CardsTheme.css";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
-interface CardsThemeI {
-  name: string;
-  apiUrl: string;
-  link: string;
-}
-interface Event {
-  nom: string;
-  media_url: string;
-  date: string;
-  description_evt: string;
-  lieu: string;
-  url_site: string;
-}
+import type { EventI } from "../types/Events";
+import type { CardsThemeI } from "../types/Events";
 
 export default function CardsTheme({ name, apiUrl, link }: CardsThemeI) {
-  const [event, setEvent] = useState<Event[]>([]);
+  const [event, setEvent] = useState<EventI[]>([]);
   useEffect(() => {
     fetch(apiUrl)
       .then((response) => response.json())

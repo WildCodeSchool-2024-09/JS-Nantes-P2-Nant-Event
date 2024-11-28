@@ -1,4 +1,4 @@
-.drop-btn {
+.drop-btn-night {
   background-color: transparent;
   color: white;
   border: none;
@@ -10,7 +10,7 @@
   padding-left: 8px;
 }
 
-.drop-btn:hover {
+.drop-btn-night:hover {
   color: #ff17a6;
   cursor: pointer;
 }
@@ -39,11 +39,17 @@
   width: 75%;
 }
 
-.list-item:hover {
+.link-header-eventsnight {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.link-header-eventsnight:hover {
   color: #ff17a6;
   background-color: black;
   cursor: pointer;
   border-radius: 8px;
+  width: 145px;
 }
 
 @media (max-width: 800px) {

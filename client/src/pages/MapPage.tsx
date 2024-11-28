@@ -5,10 +5,8 @@ import ScrollToTopButton from "../components/Scrolltotop";
 function MapPage() {
   return (
     <>
-      <div>
-        <NantesEventsMap />
-        <ContainerMapCard />
-      </div>
+      <NantesEventsMap />
+      <ContainerMapCard />
       <ScrollToTopButton />
     </>
   );

@@ -1,8 +1,9 @@
 import "../styles/DropdownNight.css";
 import { CaretDown, CaretUp } from "@phosphor-icons/react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
-const DropDownNight = ({ options }: { options: string[] }) => {
+const DropDownNight = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleDropdown = () => {
@@ -11,18 +12,28 @@ const DropDownNight = ({ options }: { options: string[] }) => {
 
   return (
     <div className="dropdown-container">
-      <button type="button" onClick={toggleDropdown} className="drop-btn">
+      <button type="button" onClick={toggleDropdown} className="drop-btn-night">
         THEMES
         {isExpanded && <CaretUp size={24} />}
         {!isExpanded && <CaretDown size={24} />}
       </button>
       {isExpanded && (
         <div className="ext-item1">
-          {options.map((option) => (
-            <ul className="list-item" key={option}>
-              {option}
-            </ul>
-          ))}
+          <Link className="link-header-eventsnight" to="/Music">
+            {" "}
+            Evénements Musicaux
+          </Link>
+          <Link className="link-header-eventsnight" to="/Sport">
+            {" "}
+            Evénements Sportifs
+          </Link>
+          <Link className="link-header-eventsnight" to="/Art">
+            {" "}
+            Evénements artistiques
+          </Link>
+          <Link className="link-header-eventsnight" to="/Show">
+            Spectacles
+          </Link>
         </div>
       )}
     </div>

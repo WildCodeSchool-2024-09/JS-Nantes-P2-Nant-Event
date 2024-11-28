@@ -16,18 +16,18 @@ export default function BodyHome() {
     <>
       <section className="section-body-home">
         <CardsTheme
-          name="Evènements musicaux"
+          name="Evénements musicaux"
           apiUrl={urls.music}
           link="/Music"
         />
         <CardsTheme
-          name="Evènements sportifs"
+          name="Evénements sportifs"
           apiUrl={urls.sports}
           link="/Sport"
         />
         <CardsTheme name="Spectacles" apiUrl={urls.shows} link="Show" />
         <CardsTheme
-          name="Evènements artistiques"
+          name="Evénements artistiques"
           apiUrl={urls.arts}
           link="Art"
         />
