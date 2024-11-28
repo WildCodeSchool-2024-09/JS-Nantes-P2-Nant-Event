@@ -8,6 +8,7 @@ import FavoritePage from "./components/FavoritePage";
 import Agenda from "./pages/Agenda";
 import Aleatoire from "./pages/Aleatoire";
 import Art from "./pages/Art";
+import Evenement from "./pages/Evenement";
 import Home from "./pages/Home";
 import HomePage from "./pages/HomePage";
 import MapPage from "./pages/MapPage";
@@ -43,20 +44,28 @@ const router = createBrowserRouter([
         element: <MapPage />,
       },
       {
+        path: "Music",
+        element: <Music />,
+      },
+      {
         path: "Sport",
         element: <Sport />,
       },
       {
-        path: "Music",
-        element: <Music />,
+        path: "Show",
+        element: <Show />,
       },
       {
         path: "Art",
         element: <Art />,
       },
       {
-        path: "Show",
-        element: <Show />,
+        path: "Event/:id",
+        element: <Evenement />,
+        loader: ({ params }) =>
+          fetch(
+            `https://data.opendatasoft.com/api/explore/v2.1/catalog/datasets/244400404_agenda-evenements-nantes-metropole_v2@nantesmetropole/records?limit=20&refine=id_manif%3A${params.id}`,
+          ),
       },
       {
         path: "Userpage",

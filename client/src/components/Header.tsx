@@ -13,25 +13,36 @@ const Header = () => {
   const MenuItems = () => (
     <>
       <li>
-        <Link className="agenda" to="/Agenda">
+        <Link className="agenda header-link" to="/Agenda">
           AGENDA
         </Link>
       </li>
-      <li className="dropdown">
+      <li className="dropdown ">
         <DropDown />
       </li>
       <li>
-        <Link to="/Aleatoire"> ALEATOIRE </Link>
+        <Link className="header-link" to="/Aleatoire">
+          {" "}
+          ALEATOIRE{" "}
+        </Link>
       </li>
       <li>
-        <Link to="/MapPage">MAP</Link>
+        <Link className="header-link" to="/MapPage">
+          MAP
+        </Link>
       </li>
 
       <li>
-        <Link to="/NaoNight"> NAONIGHT </Link>
+        <Link className="header-link" to="/NaoNight">
+          NAONIGHT
+        </Link>
       </li>
       <li>
+
         <Link className="heart" to="/Userpage">
+
+      
+
           ❤
         </Link>
       </li>

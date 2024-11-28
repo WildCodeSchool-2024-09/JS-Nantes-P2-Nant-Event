@@ -19,10 +19,21 @@ const DropDown = () => {
       </button>
       {isExpanded && (
         <div className="extItem1">
-          <Link to="/Music"> Evènements Musicaux</Link>
-          <Link to="/Sport"> Evènements Sportifs</Link>
-          <Link to="/Art"> Evènements Artistiques</Link>
-          <Link to="/Show">Spectacles</Link>
+          <Link className="link-header-events" to="/Music">
+            {" "}
+            Evénements Musicaux
+          </Link>
+          <Link className="link-header-events" to="/Sport">
+            {" "}
+            Evénements Sportifs
+          </Link>
+          <Link className="link-header-events" to="/Art">
+            {" "}
+            Evénements artistiques
+          </Link>
+          <Link className="link-header-events" to="/Show">
+            Spectacles
+          </Link>
         </div>
       )}
     </div>
