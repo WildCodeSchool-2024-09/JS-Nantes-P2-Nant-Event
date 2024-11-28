@@ -58,6 +58,10 @@ button.drop-btn:hover {
   font-size: 30px;
 }
 
+.heart:hover {
+  color: #e5cb6b;
+}
+
 .sidebar {
   position: fixed;
   top: 63px;

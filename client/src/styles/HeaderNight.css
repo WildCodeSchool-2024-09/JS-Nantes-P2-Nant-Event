@@ -56,12 +56,15 @@ nav a {
   transition: color 0.3s ease;
 }
 
-nav a:hover {
+.link-style:hover {
   color: #ff17a6;
 }
 
 .heart-night {
   font-size: 30px;
+}
+.heart-night:hover {
+  color: #ff17a6;
 }
 
 .sidebar {

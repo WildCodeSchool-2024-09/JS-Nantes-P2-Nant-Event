@@ -60,7 +60,7 @@ function Event() {
         body: JSON.stringify(event),
       },
     ).then((data) => {
-      alert("Event Created");
+      alert("L'événement à été ajouté à votre agenda");
       return data.json();
     });
   }
