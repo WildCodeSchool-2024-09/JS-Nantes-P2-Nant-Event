@@ -10,8 +10,6 @@ function BodyUser() {
 
   const navigate = useNavigate();
 
-  console.warn(" hello", username);
-
   if (localStorage.getItem("username")) {
     navigate("/FavoritePage");
   }
