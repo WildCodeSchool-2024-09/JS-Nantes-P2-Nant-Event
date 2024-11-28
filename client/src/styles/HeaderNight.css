@@ -31,7 +31,7 @@ nav {
   list-style: none;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   padding: 20px;
 }
 
@@ -60,7 +60,7 @@ nav a:hover {
   color: #ff17a6;
 }
 
-.heart {
+.heart-night {
   font-size: 30px;
 }
 

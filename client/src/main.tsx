@@ -5,6 +5,8 @@ import { createRoot } from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./styles/Global.css";
 import App from "./App";
+import MyCalendar from "./components/Calendar";
+import FavoritePage from "./components/FavoritePage";
 import Agenda from "./pages/Agenda";
 import Aleatoire from "./pages/Aleatoire";
 import Art from "./pages/Art";
@@ -16,6 +18,7 @@ import Music from "./pages/Music";
 import NaoNight from "./pages/NaoNight";
 import Show from "./pages/Show";
 import Sport from "./pages/Sport";
+import UserPage from "./pages/UserPage";
 
 const router = createBrowserRouter([
   {
@@ -66,12 +69,21 @@ const router = createBrowserRouter([
             `https://data.opendatasoft.com/api/explore/v2.1/catalog/datasets/244400404_agenda-evenements-nantes-metropole_v2@nantesmetropole/records?limit=20&refine=id_manif%3A${params.id}`,
           ),
       },
+      {
+        path: "Userpage",
+        element: <UserPage />,
+      },
+      { path: "FavoritePage", element: <FavoritePage /> },
     ],
   },
 
   {
     path: "/Naonight",
     element: <NaoNight />,
+  },
+  {
+    path: "/Calendar",
+    element: <MyCalendar />,
   },
 ]);
 

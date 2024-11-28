@@ -1,5 +1,5 @@
 import "../styles/HomePage.css";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   return (
@@ -15,9 +15,6 @@ function HomePage() {
           </Link>
         </button>
       </div>
-      <main>
-        <Outlet />
-      </main>
     </>
   );
 }

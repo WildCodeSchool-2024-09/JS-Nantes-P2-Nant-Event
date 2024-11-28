@@ -1,0 +1,95 @@
+.cards-event-fav {
+  display: flex;
+  gap: 35px;
+  color: black;
+}
+
+.figure-image {
+  width: 500px;
+  height: 280px;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  overflow: hidden;
+}
+
+.figure-image:hover + span {
+  bottom: -36px;
+  opacity: 1;
+}
+
+.img-card-night {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: .3s ease-in-out;
+}
+
+.img-card-night:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.info-card-night {
+  width: 300px;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", serif;
+}
+
+.title-card-night {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.italic-card-night {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.price-card-night {
+  font-style: italic;
+}
+
+.bold-card-fav {
+  font-weight: 700;
+  color: #e6b504;
+}
+
+.button-orange {
+  padding: 10px;
+  background-color: #e6b504;
+  border-radius: 20px;
+  height: 35px;
+  color: white;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: larger;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 850px) {
+  .cards-event-fav {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+  .info-card-night {
+    width: 300px;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .figure-image {
+    width: 400px;
+  }
+}

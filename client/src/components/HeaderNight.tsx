@@ -27,7 +27,7 @@ const HeaderNight = () => {
       <Link className="link-style" to={""}>
         NAONIGHT
       </Link>
-      <Link className="link-style" to={""}>
+      <Link className="heart-night" to="/Userpage">
         ❤
       </Link>
     </>
