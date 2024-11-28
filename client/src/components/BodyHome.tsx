@@ -11,13 +11,26 @@ export default function BodyHome() {
       "https://data.opendatasoft.com/api/explore/v2.1/catalog/datasets/244400404_agenda-evenements-nantes-metropole_v2@nantesmetropole/records?limit=20&refine=types_libelles%3ATh%C3%A9%C3%A2tre%20-%20Humour",
     arts: "https://data.opendatasoft.com/api/explore/v2.1/catalog/datasets/244400404_agenda-evenements-nantes-metropole_v2@nantesmetropole/records?limit=20&refine=types_libelles%3AProjection",
   };
+
   return (
     <>
       <section className="section-body-home">
-        <CardsTheme name="Evènements musicaux" apiUrl={urls.music} />
-        <CardsTheme name="Evènements sportifs" apiUrl={urls.sports} />
-        <CardsTheme name="Spectacles" apiUrl={urls.shows} />
-        <CardsTheme name="Evènements artistiques" apiUrl={urls.arts} />
+        <CardsTheme
+          name="Evènements musicaux"
+          apiUrl={urls.music}
+          link="/Music"
+        />
+        <CardsTheme
+          name="Evènements sportifs"
+          apiUrl={urls.sports}
+          link="/Sport"
+        />
+        <CardsTheme name="Spectacles" apiUrl={urls.shows} link="Show" />
+        <CardsTheme
+          name="Evènements artistiques"
+          apiUrl={urls.arts}
+          link="Art"
+        />
       </section>
     </>
   );

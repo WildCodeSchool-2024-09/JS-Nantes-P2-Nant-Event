@@ -17,11 +17,15 @@
 .event_title {
   font-family: "Montserrat", sans-serif;
   color: white;
+  margin-bottom: 16px;
 }
 
 .poster {
   width: auto;
-  max-height: 35vh;
+  max-height: 35%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 16px;
 }
 
 .cta {
@@ -33,6 +37,7 @@
   font-family: "Montserrat", sans-serif;
   background-color: white;
   cursor: pointer;
+  margin-bottom: 16px;
 }
 .cta:hover {
   border-color: #e6b504;
@@ -44,6 +49,7 @@
 .event_info {
   color: black;
   font-family: "Montserrat", sans-serif;
+  margin-bottom: 16px;
 }
 
 .event_url {
@@ -57,11 +63,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 60vh;
   }
   .title {
     text-align: center;
+    font-size: 2.5rem;
   }
   .event_title {
     text-align: center;
+  }
+  .poster {
+    width: auto;
+    max-width: 80%;
   }
 }

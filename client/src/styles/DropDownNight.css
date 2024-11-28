@@ -7,10 +7,11 @@
   font-size: 17px;
   display: flex;
   align-items: center;
+  padding-left: 8px;
 }
 
 .drop-btn:hover {
-  color: #e5cb6b;
+  color: #ff17a6;
   cursor: pointer;
 }
 
@@ -19,7 +20,7 @@
   display: inline-block;
 }
 
-.extItem1 {
+.ext-item1 {
   position: absolute;
   top: 100%;
   left: 0;
@@ -29,23 +30,24 @@
   border-radius: 10px;
   z-index: 1000;
   margin-top: 10px;
-  padding: 5px 0px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
 }
 
-.listItem {
+.list-item {
   color: white;
   padding: 15px;
   padding-left: 20px;
   width: 75%;
 }
 
-.listItem:hover {
-  color: #e5cb6b;
+.list-item:hover {
+  color: #ff17a6;
   background-color: black;
   cursor: pointer;
   border-radius: 8px;
-  width: 145px;
+}
+
+@media (max-width: 800px) {
+  .drop-btn {
+    font-size: 14px;
+  }
 }

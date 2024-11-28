@@ -1,31 +1,40 @@
 import { useState } from "react";
-import type { ChangeEvent, FormEvent } from "react";
-/* import { useNavigate, useOutletContext } from "react-router-dom";*/
+import { useEffect } from "react";
+import { Outlet, useNavigate } from "react-router-dom";
+
 import "../styles/BodyUser.css";
 
 function BodyUser() {
-  const [dataUser, setDataUser] = useState({
-    username: "",
-    email: "",
-  });
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
 
-  //const navigate = useNavigate();//
+  const navigate = useNavigate();
 
-  // const { counter, setCounter } = useOutletContext() as any;
+  console.warn(" hello", username);
 
-  function handleChange(e: ChangeEvent<HTMLInputElement>) {
-    const { name, value } = e.target;
-    setDataUser((prevDataUser) => ({
-      ...prevDataUser,
-      [name]: value,
-    }));
+  if (localStorage.getItem("username")) {
+    navigate("/FavoritePage");
   }
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    console.warn(dataUser);
-    /*navigate("/");*/
-  }
+  useEffect(() => {
+    const savedUsername = localStorage.getItem("username");
+    const savedEmail = localStorage.getItem("email");
+
+    if (savedUsername) {
+      setUsername(savedUsername);
+    }
+    if (savedEmail) {
+      setEmail(savedEmail);
+    }
+  }, []);
+
+  const handleSubmit = (event: { preventDefault: () => void }) => {
+    event.preventDefault();
+
+    localStorage.setItem("username", username);
+    localStorage.setItem("email", email);
+    navigate("/FavoritePage");
+  };
 
   return (
     <>
@@ -38,8 +47,8 @@ function BodyUser() {
             <input
               type="text"
               name="username"
-              value={dataUser.username}
-              onChange={handleChange}
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
             />
 
             <p>Votre e-mail</p>
@@ -47,13 +56,16 @@ function BodyUser() {
             <input
               type="email"
               name="email"
-              value={dataUser.email}
-              onChange={handleChange}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
             <button type="submit">Soumettre</button>
           </form>
         </div>
       </section>
+      <main>
+        <Outlet />
+      </main>
     </>
   );
 }

@@ -1,4 +1,5 @@
 import "../styles/Footer.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -24,16 +25,18 @@ function Footer() {
             <a href="/">HOME</a>
           </li>
           <li>
-            <a href="/">AGENDA</a>
+            <Link className="agenda" to="/Agenda">
+              AGENDA
+            </Link>
           </li>
           <li>
-            <a href="/">ALEATOIRE</a>
+            <Link to="/Aleatoire"> ALEATOIRE </Link>
           </li>
           <li>
-            <a href="/">MAP</a>
+            <Link to="/MapPage">MAP</Link>
           </li>
           <li>
-            <a href="/">NAO NIGHT</a>
+            <Link to="/NaoNight"> NAONIGHT </Link>
           </li>
         </ul>
       </div>

@@ -1,7 +1,7 @@
-.cards-event-night {
+.cards-event-fav {
   display: flex;
   gap: 35px;
-  color: white;
+  color: black;
 }
 
 .figure-image {
@@ -53,14 +53,14 @@
   font-style: italic;
 }
 
-.bold-card-night {
+.bold-card-fav {
   font-weight: 700;
-  color: #fffb17;
+  color: #e6b504;
 }
 
-.button-rose {
+.button-orange {
   padding: 10px;
-  background-color: #ff17a6;
+  background-color: #e6b504;
   border-radius: 20px;
   height: 35px;
   color: white;
@@ -74,7 +74,7 @@
 }
 
 @media screen and (max-width: 850px) {
-  .cards-event-night {
+  .cards-event-fav {
     display: flex;
     flex-direction: column;
     gap: 25px;
