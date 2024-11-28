@@ -22,8 +22,7 @@ const Header = () => {
       </li>
       <li>
         <Link className="header-link" to="/Aleatoire">
-          {" "}
-          ALEATOIRE{" "}
+          ALEATOIRE
         </Link>
       </li>
       <li>

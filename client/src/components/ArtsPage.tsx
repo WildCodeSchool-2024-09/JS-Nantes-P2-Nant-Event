@@ -21,7 +21,7 @@ function ArtsPage() {
         <h1 className="theme-title"> Evènement Artistiques </h1>
 
         {event?.map((el) => {
-          return <CardMusic key={el.id_manif} data={el} id={el.id_manif} />;
+          return <CardMusic key={el.id_agenda_in} data={el} id={el.id_manif} />;
         })}
       </section>
     </>

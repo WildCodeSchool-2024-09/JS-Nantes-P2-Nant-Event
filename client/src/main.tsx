@@ -1,6 +1,8 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { createClient } from "@supabase/supabase-js";
+import { SessionContextProvider } from "@supabase/auth-helpers-react";
 import "./styles/Global.css";
 import App from "./App";
 import Agenda from "./pages/Agenda";
@@ -78,8 +80,15 @@ if (rootElement == null) {
   throw new Error(`Your HTML Document should contain a <div id="root"></div>`);
 }
 
+const supabase = createClient(
+  "https://euowdjtjzqexuaoylmyf.supabase.co",
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV1b3dkanRqenFleHVhb3lsbXlmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzE1NzU3MDcsImV4cCI6MjA0NzE1MTcwN30.IHb_RTGTvxI05M6ClA6LmTrzE1Ycd8XFlT-DVdPzO-I",
+);
+
 createRoot(rootElement).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <SessionContextProvider supabaseClient={supabase}>
+      <RouterProvider router={router} />
+    </SessionContextProvider>
   </StrictMode>,
 );

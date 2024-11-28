@@ -22,7 +22,11 @@ function SportPage() {
 
         {event?.map((event) => {
           return (
-            <CardMusic key={event.id_manif} data={event} id={event.id_manif} />
+            <CardMusic
+              key={event.id_agenda_in}
+              data={event}
+              id={event.id_manif}
+            />
           );
         })}
       </section>

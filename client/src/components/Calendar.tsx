@@ -37,7 +37,7 @@ function MyCalendar() {
         {data !== null &&
           filteredArray?.map((el) => {
             return (
-              <div key={el.id} className="agenda-container">
+              <div key={el.id_agenda_in} className="agenda-container">
                 <div className="calendar-img">
                   <Link to={`/event/${el.id_manif}`}>
                     {el.media_url ? (

@@ -22,7 +22,7 @@ function ContainerMapCard() {
   return (
     <div className="card-container">
       {event?.map((el) => {
-        return <MapCard key={el.id_manif} data={el} />;
+        return <MapCard key={el.id_agenda_in} data={el} />;
       })}
     </div>
   );

@@ -25,7 +25,9 @@ export default function CardsTheme({ name, apiUrl, link }: CardsThemeI) {
         <main className="title-card-event">
           <h2 className="title-theme">{name}</h2>
           <p className="voir-plus">
-            <Link to={link}> Voir plus</Link>
+            <Link to={link} className="see-more-link">
+              Voir plus
+            </Link>
           </p>
         </main>
         <article className="event-align">
