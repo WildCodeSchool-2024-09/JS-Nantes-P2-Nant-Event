@@ -25,11 +25,11 @@ export default function BodyHome() {
           apiUrl={urls.sports}
           link="/Sport"
         />
-        <CardsTheme name="Spectacles" apiUrl={urls.shows} link="Show" />
+        <CardsTheme name="Spectacles" apiUrl={urls.shows} link="/Show" />
         <CardsTheme
           name="Evénements artistiques"
           apiUrl={urls.arts}
-          link="Art"
+          link="/Art"
         />
       </section>
     </>

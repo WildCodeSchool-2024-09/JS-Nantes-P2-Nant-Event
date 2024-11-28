@@ -15,6 +15,7 @@ export interface EventI {
   heure_debut: number;
   emetteur: string;
   lien_agenda: string;
+  heure_fin: number;
 }
 
 export interface EventApi {
