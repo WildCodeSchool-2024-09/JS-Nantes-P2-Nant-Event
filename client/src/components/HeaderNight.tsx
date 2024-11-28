@@ -16,7 +16,7 @@ const HeaderNight = () => {
         AGENDA
       </Link>
       <Link className="link-style" to={""}>
-        <DropDownNight options={["Item 1", "Item 2", "Item 3"]} />
+        <DropDownNight />
       </Link>
       <Link className="link-style" to="/Aleatoire">
         ALEATOIRE

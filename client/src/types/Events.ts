@@ -17,6 +17,7 @@ export interface EventI {
   lien_agenda: string;
   longitude: number;
   latitude: number;
+  heure_fin: number;
 }
 
 export interface EventApi {

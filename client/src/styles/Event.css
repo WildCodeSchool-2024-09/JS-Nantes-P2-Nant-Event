@@ -6,7 +6,7 @@
   align-items: center;
   background-color: white;
   width: 100vw;
-  gap: 20px;
+  gap: 16px;
 }
 
 .event-image {
@@ -66,6 +66,32 @@
   text-decoration: none;
   cursor: pointer;
   font-weight: bolder;
+}
+
+.google-agenda {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+.google-agenda:hover {
+  border: #e6b504 2px solid;
+}
+
+.google-button {
+  font-family: "Montserrat", sans-serif;
+  background: none;
+  border: none;
+  color: #e6b504;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.google-button:hover {
+  text-decoration: underline 2px;
 }
 
 @media screen and (max-width: 500px) {

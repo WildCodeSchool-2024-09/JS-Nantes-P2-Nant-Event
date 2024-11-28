@@ -27,7 +27,7 @@ function ContainerMapCard({ onEventSelect }: ContainerMapCardProps) {
   return (
     <div className="card-container">
       {events?.map((el) => (
-        <MapCard key={el.id_manif} data={el} onSelect={onEventSelect} />
+        <MapCard key={el.id_agenda_in} data={el} onSelect={onEventSelect} />
       ))}
     </div>
   );

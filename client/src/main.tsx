@@ -1,3 +1,5 @@
+import { SessionContextProvider } from "@supabase/auth-helpers-react";
+import { createClient } from "@supabase/supabase-js";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
@@ -77,9 +79,15 @@ const rootElement = document.getElementById("root");
 if (rootElement == null) {
   throw new Error(`Your HTML Document should contain a <div id="root"></div>`);
 }
+const MySupabaseURL = import.meta.env.VITE_SUPABASE_URL;
+const MySupabaseToken = import.meta.env.VITE_SUPABASE_TOKEN;
+
+const supabase = createClient(`${MySupabaseURL}`, `${MySupabaseToken}`);
 
 createRoot(rootElement).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <SessionContextProvider supabaseClient={supabase}>
+      <RouterProvider router={router} />
+    </SessionContextProvider>
   </StrictMode>,
 );
