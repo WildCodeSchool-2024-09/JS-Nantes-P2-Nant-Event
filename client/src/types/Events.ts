@@ -15,6 +15,8 @@ export interface EventI {
   heure_debut: number;
   emetteur: string;
   lien_agenda: string;
+  longitude: number;
+  latitude: number;
   heure_fin: number;
 }
 

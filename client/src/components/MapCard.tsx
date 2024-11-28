@@ -4,11 +4,11 @@ import type { EventI } from "../types/Events";
 
 interface MapCardProps {
   data: EventI;
+  onSelect: (event: EventI) => void;
 }
 
-function MapCard({ data }: MapCardProps) {
+function MapCard({ data, onSelect }: MapCardProps) {
   const event = data;
-
   const dateString = event?.date || "";
   const [_, month, day] = dateString.split("-");
 
@@ -39,10 +39,17 @@ function MapCard({ data }: MapCardProps) {
       <section className="event-info">
         <h2 className="event-title">{event?.nom}</h2>
         <div className="event-time">{event?.heure_debut}</div>
-        <address className="adress">
-          <h3 className="location-name">{data?.lieu}</h3>
-          <p className="location-address">{event?.adresse}</p>
-        </address>
+
+        <button
+          type="button"
+          onClick={() => onSelect(event)}
+          className="btn-container"
+        >
+          <address className="adress">
+            <h3 className="location-name">{data?.lieu}</h3>
+            <p className="location-address">{event?.adresse}</p>
+          </address>
+        </button>
       </section>
       <figure className="event-image-container">
         <Link to={`/event/${event.id_manif}`}>
