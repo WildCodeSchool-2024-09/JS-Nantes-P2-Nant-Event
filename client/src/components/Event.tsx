@@ -1,11 +1,11 @@
 import "../styles/Event.css";
-import { useLoaderData } from "react-router-dom";
-import type { EventI } from "../types/Events";
 import {
   useSession,
   useSessionContext,
   useSupabaseClient,
 } from "@supabase/auth-helpers-react";
+import { useLoaderData } from "react-router-dom";
+import type { EventI } from "../types/Events";
 
 interface DataProps {
   results: EventI[];
