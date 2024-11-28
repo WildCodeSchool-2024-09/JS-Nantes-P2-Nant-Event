@@ -18,7 +18,7 @@ const NantesEventsMap = ({ selectedEvent }: NantesEventsMapProps) => {
         <button className="btn-map" type="button">
           Aujourd'hui
         </button>
-        Semaine du 4 au 10 Novembre{" "}
+        Semaine du 25 Novembre au 1 Décembre{" "}
       </h1>
       <div className="map-wrapper">
         <iframe
